@@ -1,10 +1,11 @@
 #include <stdlib.h>
 #include <stdio.h>
+
 #include "frequences.h"
 
 double* calculFrequences(FILE* fichier)
 {
-  //Déclaration et initialisation du tableau de 256 cases.
+  //Déclaration et initialisation du tableau de frequences.
   double* frequences=(double*)malloc(256*sizeof(double));
 
   for(int a=0 ; a<256 ; a++)
@@ -17,11 +18,11 @@ double* calculFrequences(FILE* fichier)
 
   //boucle comte le nombre de caractere dans le fichier + incrémente dans le tableau le carractére trouvé.
 
-    while( ( (char)(caractereLecture = fgetc(fichier)) ) != EOF )
-    {
-      compteur++;
-      frequences[caractereLecture]++;
-    }
+  while( ( (char)(caractereLecture = fgetc(fichier)) ) != EOF )
+  {
+    compteur++;
+    frequences[caractereLecture]++;
+  }
 
 
 

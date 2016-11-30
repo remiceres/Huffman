@@ -2,6 +2,8 @@
 #define __DEFNOEUD_H__
 
 
+
+
 //Définition de la structure noeud.
 typedef struct noeud
 {

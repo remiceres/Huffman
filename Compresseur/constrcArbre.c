@@ -16,9 +16,12 @@ void initabl(double* tabfrequence, Noeud* arbre)
   }
 
   //initialisation des fréquences avec les valeurs a partir du tableau de frequences calculer a partir du document
-  for(int j=0 ; j<256 ; j++)
+  if ( tabfrequence != NULL)
   {
-    arbre[j].frequences = tabfrequence[j];
+    for(int j=0 ; j<256 ; j++)
+    {
+      arbre[j].frequences = tabfrequence[j];
+    }
   }
 }
 
