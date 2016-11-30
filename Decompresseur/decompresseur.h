@@ -7,6 +7,6 @@
 
 #include "../Compresseur/defNoeud.h"
 
-int decompresseur(FILE* input_compress);
+int decompresseur(FILE* input_compress, FILE* output_compress);
 
 #endif

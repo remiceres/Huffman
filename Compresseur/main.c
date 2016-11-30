@@ -63,14 +63,35 @@ void compression(char* nomFichier)
 int main(int argc, char** argv)
 {
 
-    //vérifie le nombre d'arguments.
-    if(argc != 2)
-    {
-      fprintf(stderr, "usage %s <Fichier>  \n", argv[0] );
-      return 1;
-    }
+  //  //vérifie le nombre d'arguments.
+  //  if(argc != 2)
+  //  {
+  //    fprintf(stderr, "usage %s <Fichier>  \n", argv[0] );
+  //    return 1;
+  //  }
 
+  //ouverture du fichier
+  FILE* input;
+  input = fopen( argv[1] , "r" );
 
+  if (input == NULL)
+  {
+    fprintf(stderr, "Le fichier est illisible : %s\n", strerror(errno));
+    exit(1);
+  }
+
+// extraire sa en 1 fonction
+  FILE* output;
+  output = fopen( argv[2] , "w" );
+
+  if (output == NULL)
+  {
+    fprintf(stderr, "Le fichier est non inscriptible : %s\n", strerror(errno));
+    exit(1);
+  }
+
+    decompresseur(input,output);//entier sortie pour errur
+    
 
 
 
