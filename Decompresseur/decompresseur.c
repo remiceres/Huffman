@@ -21,6 +21,8 @@ int reconstruction_arbre_recursion(FILE* input_compress, Noeud* arbre, int* i)
 
     arbre[position].fg=reconstruction_arbre_recursion(input_compress,arbre,i);
     arbre[position].fd=reconstruction_arbre_recursion(input_compress,arbre,i);
+    printf("Indice actuel : %d | Indice gauche : %d  |  Indice droit : %d\n",position, arbre[position].fg, arbre[position].fd);
+
     return position;
   }
 }
