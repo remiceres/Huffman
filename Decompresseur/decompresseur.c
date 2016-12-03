@@ -38,24 +38,25 @@ Noeud* reconstruction_arbre(FILE* input_compress)
   reconstruction_arbre_recursion(input_compress, arbre, &prochain_indice);
   return arbre;
 }
-int verif_dernier_octet(FILE* input_compress)
+int verif_dernier_octet(FILE* input_compress, int* octet_actuel)
 {
-  if ( getc(input_compress)!= EOF )
+  fseek(input_compress, 1, SEEK_CUR);
+  if ( (*octet_actuel = getc(input_compress))!= EOF )
   {
-    fseek(input_compress,-1, SEEK_CUR);
+    fseek(input_compress,-2, SEEK_CUR);
     return 0;
   }
-  fseek(input_compress,-1, SEEK_CUR);
+  fseek(input_compress,-2, SEEK_CUR);
   return 1;
 }
 
-void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre )
+void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre, int nb_0_inutile )
 {
   int indice = 256;
 
   int octet_actuel;
 
-  while ( !verif_dernier_octet(input_compress) )
+  while ( !verif_dernier_octet(input_compress, &octet_actuel) )
   {
 
     octet_actuel=fgetc(input_compress);
@@ -98,6 +99,47 @@ void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre
       }
     }
   }
+
+  fseek(input_compress, -2, SEEK_CUR);
+  octet_actuel = fgetc(input_compress);
+  printf(" octet_actuel : %d, position du curseur : %lu\n", octet_actuel, ftell(input_compress) );
+  for (int bit_actuel = 7; bit_actuel > nb_0_inutile-1; bit_actuel --)
+  {
+
+    if ( (octet_actuel >> bit_actuel) % 2 )
+    {
+      if ( arbre[arbre[indice].fd].fd == -1 )
+      {
+        printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
+        printf("indice : %c \n", arbre[indice].fd);
+        fputc(arbre[indice].fd, output_compress);
+        indice=256;
+      }
+      else
+      {
+        printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
+
+        indice = arbre[indice].fd;
+      }
+    }
+    else
+    {
+      if ( arbre[arbre[indice].fg].fg == -1 ) ///A A A A A EXTRAIIIIRE
+      {
+        printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
+        printf("indice : %c \n", arbre[indice].fg);
+
+        fputc(arbre[indice].fg, output_compress);
+        indice=256;
+      }
+      else
+      {
+        printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
+
+        indice = arbre[indice].fg;
+      }
+    }
+  }
 }
 
 
@@ -116,7 +158,7 @@ int decompresseur(FILE* input_compress, FILE* output_compress)
   Noeud* arbre = reconstruction_arbre(input_compress);
 
   //FONCTION écriture des carracteres
-  decodage_caracteres(input_compress,output_compress, arbre);
+  decodage_caracteres(input_compress,output_compress, arbre, nb_0_inutile);
 
 
 
