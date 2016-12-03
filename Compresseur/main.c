@@ -71,9 +71,19 @@ int main(int argc, char** argv)
   //    return 1;
   //  }
 
+  if ( !strcmp(argv[1],"-c"))
+  {
+    printf("Je compresse\n" );
+
+    compression(argv[2]);
+  }
+
+if ( !strcmp(argv[1],"-d"))
+{
+  printf("Je décompresse\n" );
   //ouverture du fichier
   FILE* input;
-  input = fopen( argv[1] , "r" );
+  input = fopen( argv[2] , "r" );
 
   if (input == NULL)
   {
@@ -83,7 +93,7 @@ int main(int argc, char** argv)
 
 // extraire sa en 1 fonction
   FILE* output;
-  output = fopen( argv[2] , "w" );
+  output = fopen( argv[1] , "w" );
 
   if (output == NULL)
   {
@@ -103,12 +113,13 @@ int main(int argc, char** argv)
 
 
 
+
   // FIXME: Penser à désallouer le tableau de fréquences
   // FIXME: Penser à désallouer le tableau de initIndex
   // FIXME: Désallouer les tabeaux des chaînes
   //  TODO: Traiter les cas particuliers
   fclose(input);
   fclose(output);
-
+}
   return 0;
 }
