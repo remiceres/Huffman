@@ -48,6 +48,8 @@ void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre
 
     for(int bit_actuel = 7 ; bit_actuel>=0 ; bit_actuel--)
     {
+      printf("%d\n", ( (octet_actuel >> bit_actuel) % 2 ) );
+      
       if ( (octet_actuel >> bit_actuel) % 2 )
       {
         if ( arbre[indice].fd == -1 )
