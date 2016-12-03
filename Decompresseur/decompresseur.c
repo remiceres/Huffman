@@ -16,17 +16,19 @@ int reconstruction_arbre_recursion(FILE* input_compress, Noeud* arbre, int* i)
   }
   else
   {
-    arbre[*i].fg=reconstruction_arbre_recursion(input_compress,arbre,i);
-    arbre[*i].fd=reconstruction_arbre_recursion(input_compress,arbre,i);
-    *i = *i +1;
-    return *i-1;
+    int position = *i;
+    (*i)++;
+
+    arbre[position].fg=reconstruction_arbre_recursion(input_compress,arbre,i);
+    arbre[position].fd=reconstruction_arbre_recursion(input_compress,arbre,i);
+    return position;
   }
 }
 
 Noeud* reconstruction_arbre(FILE* input_compress)
 {
   //déclaration et initialisation de l'arbre
-  Noeud* arbre = malloc(sizeof(Noeud));
+  Noeud* arbre = malloc(511 * sizeof(Noeud));
   initabl(NULL,arbre);
 
   //FONCTION : recursive qui met les valeurs dans l'arbre

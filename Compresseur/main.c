@@ -8,6 +8,7 @@
 #include "defNoeud.h"
 #include "codeBin.h"
 #include "generation.h"
+#include "../Decompresseur/decompresseur.h"
 
 void compression(char* nomFichier)
 {
@@ -54,7 +55,7 @@ void compression(char* nomFichier)
 
     //ouverture du fichier sortie
     FILE* output;
-    output = fopen( strcat(nomFichier,".huff") , "w" );
+    output = fopen( strcat(nomFichier,".decomp") , "w" );
 
     //fonction ecriture fichier sortie
     encodage(index, input, output, nbCaractere, indRacine, arbre);
@@ -90,8 +91,13 @@ int main(int argc, char** argv)
     exit(1);
   }
 
-    decompresseur(input,output);//entier sortie pour errur
-    
+  int resultat = decompresseur(input,output);//entier sortie pour erreur
+
+  if (resultat == ERR_FORMAT)
+  {
+    fprintf(stderr, "Le format du fichier d'entrée n'est pas reconnu.\n");
+    return ERR_FORMAT;
+  }
 
 
 
@@ -101,11 +107,8 @@ int main(int argc, char** argv)
   // FIXME: Penser à désallouer le tableau de initIndex
   // FIXME: Désallouer les tabeaux des chaînes
   //  TODO: Traiter les cas particuliers
-  //  TODO: Fermer le fichier a compréssé
-  //  TODO:fremer le ficher de sortie
-
-
-
+  fclose(input);
+  fclose(output);
 
   return 0;
 }

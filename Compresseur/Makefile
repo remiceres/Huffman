@@ -1,5 +1,5 @@
 CC=gcc
-OBJECTS=main.o frequences.o constrcArbre.o codeBin.o generation.o
+OBJECTS=main.o frequences.o constrcArbre.o codeBin.o generation.o ../Decompresseur/decompresseur.o
 CFLAGS=-Wall -std=c99 -g
 PROG=huff
 $(PROG): $(OBJECTS)
