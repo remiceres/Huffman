@@ -11,4 +11,4 @@ codeBin.o: codeBin.c # dépendances de constrcArbre.c = fichiers inclus
 generation.o: generation.c # dépendances de constrcArbre.c = fichiers inclus
 
 clean:
-	rm -f *.o $(PROG)
+	rm -f *.o $(PROG) testhuffman\/*.decomp testhuffman\/*.huff
