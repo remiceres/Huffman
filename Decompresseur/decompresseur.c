@@ -42,35 +42,46 @@ Noeud* reconstruction_arbre(FILE* input_compress)
 void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre )
 {
   int indice = 256;
-  while ( !feof(input_compress) )
+
+  int octet_actuel;
+
+  while ( (( octet_actuel=fgetc(input_compress))!= EOF) )
   {
-    int octet_actuel = fgetc(input_compress);
+
 
     for(int bit_actuel = 7 ; bit_actuel>=0 ; bit_actuel--)
     {
-      printf("%d\n", ( (octet_actuel >> bit_actuel) % 2 ) );
-      
+
       if ( (octet_actuel >> bit_actuel) % 2 )
       {
-        if ( arbre[indice].fd == -1 )
+        if ( arbre[arbre[indice].fd].fd == -1 )
         {
-          fputc(indice, output_compress);
+          printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
+          printf("indice : %c \n", arbre[indice].fd);
+          fputc(arbre[indice].fd, output_compress);
           indice=256;
         }
         else
         {
+          printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
+
           indice = arbre[indice].fd;
         }
       }
       else
       {
-        if ( arbre[indice].fg == -1 ) ///A A A A A EXTRAIIIIRE
+        if ( arbre[arbre[indice].fg].fg == -1 ) ///A A A A A EXTRAIIIIRE
         {
-          fputc(indice, output_compress);
+          printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
+          printf("indice : %c \n", arbre[indice].fg);
+
+          fputc(arbre[indice].fg, output_compress);
           indice=256;
         }
         else
         {
+          printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
+
           indice = arbre[indice].fg;
         }
       }
