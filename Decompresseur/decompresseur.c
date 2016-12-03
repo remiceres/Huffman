@@ -40,6 +40,7 @@ Noeud* reconstruction_arbre(FILE* input_compress)
 }
 int verif_dernier_octet(FILE* input_compress)
 {
+  fseek(input_compress,1,SEEK_CUR);
   if ( getc(input_compress)!= EOF )
   {
     fseek(input_compress,-1, SEEK_CUR);
