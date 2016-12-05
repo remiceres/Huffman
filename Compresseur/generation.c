@@ -110,7 +110,7 @@ void encodage(char** index, FILE* entre, FILE* sortie, int nbCaractere, int raci
 
   //eccriture du nombre de 0 inutile
   fseek(sortie, 3 , SEEK_SET);
-  fputc( 8 - quantite_utilise, sortie);
+  fputc( quantite_utilise, sortie);
 
 
   fclose(sortie);

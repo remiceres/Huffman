@@ -50,18 +50,25 @@ int verif_dernier_octet(FILE* input_compress, int octet_actuel)
   return 1;
 }
 
-void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre, int nb_0_inutile )
+void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre, int quantite_utilise )
 {
   int indice = 256;
 
   int octet_actuel;
+  int decalage = 0;
+  int fin;
 
   do
   {
 
     octet_actuel=fgetc(input_compress);
+    fin = verif_dernier_octet(input_compress, octet_actuel);
 
-    for(int bit_actuel = 7 ; bit_actuel>=0 ; bit_actuel--)
+    if (fin) {
+      quantite_utilise == 0 ? (decalage = 0) : (decalage = quantite_utilise - 1);
+    }
+
+    for(int bit_actuel = 7 ; bit_actuel > decalage ; bit_actuel--)
     {
 
       if ( (octet_actuel >> bit_actuel) % 2 )
@@ -98,48 +105,7 @@ void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre
         }
       }
     }
-  }while ( !verif_dernier_octet(input_compress, octet_actuel) );
-
-  fseek(input_compress, -2, SEEK_CUR);
-  octet_actuel = fgetc(input_compress);
-  printf(" octet_actuel : %d, position du curseur : %lu\n", octet_actuel, ftell(input_compress) );
-  for (int bit_actuel = 7; bit_actuel > nb_0_inutile-1; bit_actuel --)
-  {
-
-    if ( (octet_actuel >> bit_actuel) % 2 )
-    {
-      if ( arbre[arbre[indice].fd].fd == -1 )
-      {
-        printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
-        printf("indice : %c \n", arbre[indice].fd);
-        fputc(arbre[indice].fd, output_compress);
-        indice=256;
-      }
-      else
-      {
-        printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
-
-        indice = arbre[indice].fd;
-      }
-    }
-    else
-    {
-      if ( arbre[arbre[indice].fg].fg == -1 ) ///A A A A A EXTRAIIIIRE
-      {
-        printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
-        printf("indice : %c \n", arbre[indice].fg);
-
-        fputc(arbre[indice].fg, output_compress);
-        indice=256;
-      }
-      else
-      {
-        printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
-
-        indice = arbre[indice].fg;
-      }
-    }
-  }
+  }while ( !fin );
 }
 
 
@@ -152,13 +118,13 @@ int decompresseur(FILE* input_compress, FILE* output_compress)
   }
 
   //définition et récupération du nombre de 0 inutile a la fin du fichier
-  int nb_0_inutile = fgetc(input_compress);
+  int quantite_utilise = fgetc(input_compress);
 
   //FONCTION reconstruction de l'arbre
   Noeud* arbre = reconstruction_arbre(input_compress);
 
   //FONCTION écriture des carracteres
-  decodage_caracteres(input_compress,output_compress, arbre, nb_0_inutile);
+  decodage_caracteres(input_compress,output_compress, arbre, quantite_utilise);
 
 
 
