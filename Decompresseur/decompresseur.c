@@ -65,10 +65,10 @@ void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre
     fin = verif_dernier_octet(input_compress, octet_actuel);
 
     if (fin) {
-      quantite_utilise == 0 ? (decalage = 0) : (decalage = quantite_utilise - 1);
+      decalage = 8 - quantite_utilise ;
     }
 
-    for(int bit_actuel = 7 ; bit_actuel > decalage ; bit_actuel--)
+    for(int bit_actuel = 7 ; bit_actuel >= decalage ; bit_actuel--)
     {
 
       if ( (octet_actuel >> bit_actuel) % 2 )
@@ -119,6 +119,7 @@ int decompresseur(FILE* input_compress, FILE* output_compress)
 
   //définition et récupération du nombre de 0 inutile a la fin du fichier
   int quantite_utilise = fgetc(input_compress);
+  printf("%i\n", quantite_utilise );
 
   //FONCTION reconstruction de l'arbre
   Noeud* arbre = reconstruction_arbre(input_compress);
