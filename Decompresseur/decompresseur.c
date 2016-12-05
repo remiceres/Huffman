@@ -46,6 +46,7 @@ int verif_dernier_octet(FILE* input_compress, int octet_actuel)
     fseek(input_compress,-1, SEEK_CUR);
     return 0;
   }
+  printf("octet fin : %i\n", octet_actuel );
   fseek(input_compress,-1, SEEK_CUR);
   return 1;
 }
@@ -65,6 +66,8 @@ void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre
     fin = verif_dernier_octet(input_compress, octet_actuel);
 
     if (fin) {
+      printf("ZOOOOOOOOBBBBB\n" );
+      printf("octet actuel: %i\n", octet_actuel );
       decalage = 8 - quantite_utilise ;
     }
 
@@ -76,7 +79,7 @@ void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre
         if ( arbre[arbre[indice].fd].fd == -1 )
         {
           printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
-          printf("indice : %c \n", arbre[indice].fd);
+          printf("indice : %i \n", arbre[indice].fd);
           fputc(arbre[indice].fd, output_compress);
           indice=256;
         }
@@ -92,7 +95,7 @@ void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre
         if ( arbre[arbre[indice].fg].fg == -1 ) ///A A A A A EXTRAIIIIRE
         {
           printf("%d ", ( octet_actuel>>bit_actuel) % 2 );
-          printf("indice : %c \n", arbre[indice].fg);
+          printf("indice : %i \n", arbre[indice].fg);
 
           fputc(arbre[indice].fg, output_compress);
           indice=256;

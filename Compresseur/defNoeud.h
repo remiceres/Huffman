@@ -7,7 +7,7 @@
 //Définition de la structure noeud.
 typedef struct noeud
 {
-  int pere, fg, fd;
+  unsigned int pere, fg, fd;
   double frequences;
 }Noeud;
 
