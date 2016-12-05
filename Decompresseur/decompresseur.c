@@ -38,15 +38,15 @@ Noeud* reconstruction_arbre(FILE* input_compress)
   reconstruction_arbre_recursion(input_compress, arbre, &prochain_indice);
   return arbre;
 }
-int verif_dernier_octet(FILE* input_compress, int* octet_actuel)
+int verif_dernier_octet(FILE* input_compress, int octet_actuel)
 {
-  fseek(input_compress, 1, SEEK_CUR);
-  if ( (*octet_actuel = getc(input_compress))!= EOF )
+
+  if ( (octet_actuel = getc(input_compress))!= EOF )
   {
-    fseek(input_compress,-2, SEEK_CUR);
+    fseek(input_compress,-1, SEEK_CUR);
     return 0;
   }
-  fseek(input_compress,-2, SEEK_CUR);
+  fseek(input_compress,-1, SEEK_CUR);
   return 1;
 }
 
@@ -56,7 +56,7 @@ void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre
 
   int octet_actuel;
 
-  while ( !verif_dernier_octet(input_compress, &octet_actuel) )
+  do
   {
 
     octet_actuel=fgetc(input_compress);
@@ -98,7 +98,7 @@ void decodage_caracteres(FILE* input_compress,FILE* output_compress,Noeud* arbre
         }
       }
     }
-  }
+  }while ( !verif_dernier_octet(input_compress, octet_actuel) );
 
   fseek(input_compress, -2, SEEK_CUR);
   octet_actuel = fgetc(input_compress);
