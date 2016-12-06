@@ -18,7 +18,7 @@ double* calculFrequences(FILE* fichier)
 
   //boucle comte le nombre de caractere dans le fichier + incrémente dans le tableau le carractére trouvé.
 
-  while( ( (char)(caractereLecture = fgetc(fichier)) ) != EOF )
+  while( ( (caractereLecture = fgetc(fichier)) ) != EOF )
   {
     compteur++;
     frequences[caractereLecture]++;
@@ -33,13 +33,13 @@ double* calculFrequences(FILE* fichier)
     frequences[j] /= compteur;
   }
 
-/*
+
   //(test) affichage
   for(int a=0 ; a<256 ; a++)
   {
     printf("%d = %f\n", a , frequences[a]);
   }
-*/
+
 
 return frequences;
 }

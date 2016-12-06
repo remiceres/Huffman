@@ -36,7 +36,6 @@ void noeudMin(Noeud* arbre, int* indice_1, double* frequences_1, int indiceprece
   {
     if (arbre[i].frequences > 0 && arbre[i].frequences <= fremin)
     {
-
       if (arbre[i].pere == -1  &&  i != indiceprecedent)
       {
         fremin = arbre[i].frequences;
@@ -67,6 +66,7 @@ void NoeudPere(Noeud* arbre, int indicemin1, int indicemin2, int* nouvNoeud)
   else
   {
     *nouvNoeud = indicemin1;
+    printf(" nouvozud : %d | indicemine1 : %d \n", *nouvNoeud, indicemin1);
   }
   (*nouvNoeud)++;
 
