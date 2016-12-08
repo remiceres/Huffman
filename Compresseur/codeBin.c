@@ -28,7 +28,7 @@ char* nouvelleChaine(int longanciennechaine, char* anciennechaine, char vallAjou
 void initIndex(char** codes, Noeud* arbre, int actuel, char* chaine, int longchaine)
 {
 
-  if(arbre[actuel].fg==-1 && arbre[actuel].fd==-1)
+  if(arbre[actuel].fg==-1)
   {
 
     codes[(size_t) actuel] = chaine;

@@ -24,9 +24,6 @@ double* calculFrequences(FILE* fichier)
     frequences[caractereLecture]++;
   }
 
-
-
-
   //calcule les fréquences
   for(int j=0 ; j < 256 ; j++ )
   {

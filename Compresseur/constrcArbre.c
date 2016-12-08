@@ -52,7 +52,7 @@ void noeudMin(Noeud* arbre, int* indice_1, double* frequences_1, int indiceprece
 
 void NoeudPere(Noeud* arbre, int indicemin1, int indicemin2, int* nouvNoeud)
 {
-  if ( indicemin2!=-1)
+  if ( indicemin2!=-1 && indicemin2!=-1)
   {
     arbre[*nouvNoeud].fg = indicemin1;
     arbre[*nouvNoeud].fd = indicemin2;
@@ -65,7 +65,17 @@ void NoeudPere(Noeud* arbre, int indicemin1, int indicemin2, int* nouvNoeud)
   }
   else
   {
-    *nouvNoeud = indicemin1;
+    if ( indicemin1==-1 ) // traitement de l'arbre a 1 seul v=brance
+    {
+      *nouvNoeud = indicemin1;
+    }
+    else
+    {
+      arbre[*nouvNoeud].fg = indicemin1;
+      arbre[*nouvNoeud].fd = '\0';
+    }
+
+
     printf(" nouvozud : %d | indicemine1 : %d \n", *nouvNoeud, indicemin1);
   }
   (*nouvNoeud)++;

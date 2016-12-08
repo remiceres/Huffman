@@ -83,11 +83,13 @@ void encodage(char** index, FILE* entre, FILE* sortie, int nbCaractere, int raci
   {
     while( (caractereLecture = fgetc(entre) ) != EOF )
     {
+
       strcat(buffer, index[(size_t)caractereLecture] );
       quantite_utilise += strlen(index[(size_t) caractereLecture]);
-      printf("quantite_utilise : %d \n", quantite_utilise);
+      //printf("quantite_utilise : %d \n", quantite_utilise);
       while ( quantite_utilise >= 8 )
       {
+
         int octet = decoder_buffer(buffer, quantite_utilise);
         fputc(octet, sortie);
 
