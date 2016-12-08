@@ -85,7 +85,7 @@ void encodage(char** index, FILE* entre, FILE* sortie, int nbCaractere, int raci
     {
       strcat(buffer, index[(size_t)caractereLecture] );
       quantite_utilise += strlen(index[(size_t) caractereLecture]);
-
+      printf("quantite_utilise : %d \n", quantite_utilise);
       while ( quantite_utilise >= 8 )
       {
         int octet = decoder_buffer(buffer, quantite_utilise);
@@ -96,7 +96,6 @@ void encodage(char** index, FILE* entre, FILE* sortie, int nbCaractere, int raci
       }
     }
   }
-
   else
   {
     fprintf(stderr, "Le fichier est illisible \n");
