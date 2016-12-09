@@ -3,12 +3,12 @@
 #include <string.h>
 #include <errno.h>
 
-#include "frequences.h"
-#include "constrcArbre.h"
-#include "defNoeud.h"
-#include "codeBin.h"
-#include "generation.h"
-#include "../Decompresseur/decompresseur.h"
+#include "../include/frequences.h"
+#include "../include/constrcArbre.h"
+#include "../include/defNoeud.h"
+#include "../include/codeBin.h"
+#include "../include/generation.h"
+#include "../include/decompresseur.h"
 
 void compression(char* nomFichier)
 {

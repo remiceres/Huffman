@@ -5,7 +5,7 @@
 
 #include <stdio.h>
 
-#include "../Compresseur/defNoeud.h"
+#include "../include/defNoeud.h"
 
 int decompresseur(FILE* input_compress, FILE* output_compress);
 

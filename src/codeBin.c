@@ -1,5 +1,5 @@
-#include "codeBin.h"
-#include "defNoeud.h"
+#include "../include/codeBin.h"
+#include "../include/defNoeud.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>

@@ -1,4 +1,4 @@
-#include "constrcArbre.h"
+#include "../include/constrcArbre.h"
 #include <stdlib.h>
 #include <stdio.h>
 

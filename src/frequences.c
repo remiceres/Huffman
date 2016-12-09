@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "frequences.h"
+#include "../include/frequences.h"
 
 double* calculFrequences(FILE* fichier)
 {

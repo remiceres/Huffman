@@ -1,5 +1,5 @@
-#include "decompresseur.h"
-#include "../Compresseur/constrcArbre.h"
+#include "../include/decompresseur.h"
+#include "../include/constrcArbre.h"
 #include <stdlib.h>
 
 
