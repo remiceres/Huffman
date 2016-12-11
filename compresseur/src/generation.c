@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
 
 int DecoderBuffer(char* Buffer, int Quantite_utilise) {
     int Res_Conver = 0;
