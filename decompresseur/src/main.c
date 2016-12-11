@@ -40,19 +40,6 @@ void compression(char* nomFichier)
     //FONCTION : création de l'index
     char** index = codeBin(arbre, indRacine);
 
-
-    // //test affiche
-    // if (indRacine != -1)
-    // {
-    //   for (int i=0 ; i<256 ; i++)
-    //   {
-    //     if( index[i] != NULL)
-    //     {
-    //       printf("%3d : %16s\n", i, index[i]);
-    //     }
-    //   }
-    // }
-
     //ouverture du fichier sortie
     FILE* output;
     output = fopen( strcat(nomFichier,".decomp") , "w" );
@@ -64,19 +51,19 @@ void compression(char* nomFichier)
 int main(int argc, char** argv)
 {
 
-  //  //vérifie le nombre d'arguments.
-  //  if(argc != 2)
-  //  {
-  //    fprintf(stderr, "usage %s <Fichier>  \n", argv[0] );
-  //    return 1;
-  //  }
+    //vérifie le nombre d'arguments.
 
-  if ( !strcmp(argv[1],"-c"))
-  {
-    printf("Je compresse\n" );
+    if(argc != 2 || argc!=3)
+    {
+        fprintf(stderr, "Usage: huff [OPTION] [FILE] \n" );
+        return 1;
+    }
 
-    compression(argv[2]);
-  }
+    if ( !strcmp(argv[1],"-c"))
+    {
+        printf("Je compresse\n" );
+        compression(argv[2]);
+    }
 
 if ( !strcmp(argv[1],"-d"))
 {

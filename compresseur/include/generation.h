@@ -4,6 +4,6 @@
 #include "defNoeud.h"
 
 
-void encodage(char** index, FILE* entre, FILE* sortie, int nbCaractere, int racine,  Noeud* arbre);
+void Generation(char** index, FILE* entre, FILE* sortie, int racine,  Noeud* arbre);
 
 #endif

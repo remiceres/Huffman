@@ -3,6 +3,6 @@
 #include "defNoeud.h"
 
 
-char** codeBin(Noeud*, int);
+char** CodeBin(Noeud*, int);
 
 #endif

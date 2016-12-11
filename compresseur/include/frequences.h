@@ -3,6 +3,6 @@
 #include <stdio.h>
 
 //fonction qui calcule la fréquence d'apparition d'un caractére a partir d'un fichier texte.
-double* calculFrequences(FILE*);
+double* CalculFrequencesCaractere(FILE*);
 
 #endif
