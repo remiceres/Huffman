@@ -130,7 +130,7 @@ int main(int argc, char** argv)
     FILE* entree = OuvertureFichier( argv[1], "r" );
     FILE* sortie = OuvertureFichier( strcat(argv[2],".huf"), "w" );
 
-    //Compréssion
+    //Compression
     Compression(entree, sortie);
 
     //fermeture des fichiers
