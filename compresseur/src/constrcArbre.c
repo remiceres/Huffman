@@ -4,15 +4,15 @@
 
 
 //FONCTION : initialisation de l'arbre
-void IniTabl(double* tabfrequence, Noeud* arbre)
+void IniTabl(double* tabfrequence, Noeud* Arbre)
 {
     //initialisation de pere, fg, fd et frequences
     for(int i=0 ; i<511 ; i++)
     {
-        arbre[i].pere=-1;
-        arbre[i].fg=-1;
-        arbre[i].fd=-1;
-        arbre[i].frequences=0;
+        Arbre[i].pere=-1;
+        Arbre[i].fg=-1;
+        Arbre[i].fd=-1;
+        Arbre[i].frequences=0;
     }
 
     //initialisation des fréquences avec les valeurs a partir du tableau de frequences calculer a partir du document
@@ -20,7 +20,7 @@ void IniTabl(double* tabfrequence, Noeud* arbre)
     {
         for(int j=0 ; j<256 ; j++)
         {
-            arbre[j].frequences = tabfrequence[j];
+            Arbre[j].frequences = tabfrequence[j];
         }
     }
 }
