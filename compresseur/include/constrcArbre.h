@@ -8,14 +8,14 @@
 #include "defNoeud.h"
 
 /**
- * \fn int ConstrcArbre (double* tab_frequence,Noeud* arbre)
+ *
  * \brief Construction de l'arbre
  *
  * \param tab_frequence Tableau des fréquences de répartition des caractères
  * \param arbre Arbre préalablement initialisé
  * \return Ind_racine Indicide de la racine de l'arbre
  */
-int ConstrcArbre(double*,Noeud*);
+int ConstrcArbre(double* tab_frequence,Noeud* arbre);
 
 
 #endif

@@ -8,13 +8,14 @@
 #define __DEFNOEUD_H__
 
 /**
- * \struct Noeud
+ *
  * \brief Noeud d'un arbre binaire
  *
  * Noeud est une petite structure comportant les indices de son noeud père
  * et de ses noeuds fils. Lui est également associé la fréquence d'apparation
  * dans un fichier du caractère associé à ce noeud
  */
+ 
 typedef struct noeud
 {
   unsigned int pere, fg, fd;  /*!< Indices des noeuds père, fils gauche et fils droit */

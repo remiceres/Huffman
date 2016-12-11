@@ -8,7 +8,7 @@
 #include "defNoeud.h"
 
 /**
- * \fn char** CodeBin(Noeud* arbre,int racine)
+ *
  * \brief Génère les codes binaires
  *
  * Ces codes binaires sont associés à chaque caractère présent
@@ -18,6 +18,6 @@
  * \param racine Indice de la racine de l'Arbre
  * \return Index Tableau associant les codes binaires aux différents caractères
  */
-char** CodeBin(Noeud*, int);
+char** CodeBin(Noeud* arbre, int racine);
 
 #endif

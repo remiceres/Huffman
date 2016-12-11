@@ -9,7 +9,7 @@
 #include "defNoeud.h"
 
 /**
- * \fn void Generation(char** index, FILE* entre, FILE* sortie, int racine,  Noeud* arbre)
+ * 
  * \brief Ecrit dans le fichier "compressé" les codes binaires des caractères
  *
  * \param index Tableau de codes binaires associés aux différents caractères

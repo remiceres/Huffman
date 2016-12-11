@@ -9,7 +9,7 @@
 #include <stdio.h>
 
 /**
- * \fn double* CalculFrequencesCaractere (FILE* fichier)
+ * 
  * \brief Fonction de calcul de la répartition des fréquences dans un fichier
  *
  * \param fichier Fichier où les fréquences des caractères doivent être calculées
