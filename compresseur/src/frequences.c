@@ -15,7 +15,7 @@ double* CalculFrequencesCaractere(FILE* fichier)
     tab_frequence[i]=0;
   }
 
-  //compte le nombre caractere total + nombre d'apparition de chaque carractère.
+  //compte le nombre de caractere total + nombre d'apparition de chaque caractère.
   unsigned int caractereLecture = '\0';
   int compteur = 0;
 

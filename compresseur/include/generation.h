@@ -9,12 +9,12 @@
 #include "defNoeud.h"
 
 /**
- * 
+ *
  * \brief Ecrit dans le fichier "compressé" les codes binaires des caractères
  *
  * \param index Tableau de codes binaires associés aux différents caractères
  * \param entre Fichier d'entrée
- * \param sorti Fichier de sortie (fichier comrpessé)
+ * \param sorti Fichier de sortie (fichier compressé)
  * \param racine Indice de la racine de l'arbre
  * \param arbre Arbre
  */

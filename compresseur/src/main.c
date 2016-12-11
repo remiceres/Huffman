@@ -8,7 +8,7 @@
 #include "../include/defNoeud.h"
 #include "../include/codeBin.h"
 #include "../include/generation.h"
-#include "../include/decompresseur.h"
+
 void AffichageArbre(Noeud* Arbre, int Ind_racine)
 {
     if(Ind_racine!=-1)
@@ -28,10 +28,10 @@ double CalculeTaille(FILE* Fichier)
 void Compression(FILE* Entree,FILE* Sortie)
 {
 
-    //FONCTION : calcule les frequences d'apparition des carractére dans le fichier a compréssé
+    //FONCTION : calcule les frequences d'apparition des caractères dans le fichier a compresser
     double* Tab_frequence = CalculFrequencesCaractere(Entree);
 
-    //Affichage Fréquences de chaque caractere si non null
+    //Affichage des fréquences de chaque caractère si non null
     printf("\nCaractères et de leur probabilité d’apparition : \n \n");
     for(int a=0 ; a<256 ; a++)
     {
@@ -54,7 +54,7 @@ void Compression(FILE* Entree,FILE* Sortie)
     //FONCTION : construction de l'arbre
     Ind_racine = ConstrcArbre(Tab_frequence, Arbre);
 
-    //affiche arbre
+    //affiche l'arbre
     printf("Arbre de Huffman : \n \n");
     AffichageArbre(Arbre, Ind_racine);
     printf("\n \n");
@@ -64,7 +64,7 @@ void Compression(FILE* Entree,FILE* Sortie)
     //FONCTION : création de l'index
     char** Index = CodeBin(Arbre, Ind_racine);
 
-    //affiche Index
+    //affiche l'index
     printf("Codes binaire de chaque caractère : \n \n");
     float Somme = 0;
     int Nb = 0;
@@ -80,10 +80,10 @@ void Compression(FILE* Entree,FILE* Sortie)
     printf("La longeur moyenne des codes est de %f", Somme/Nb );
     printf("\n \n");
 
-    //fonction ecriture fichier sortie
+    //fonction: écriture du fichier de sortie
     Generation(Index, Entree, Sortie, Ind_racine, Arbre);
 
-    //affiche le ration de comprétion
+    //affiche le ratio de compression
     double Taille_Entree = CalculeTaille(Entree);
     double Taille_Sortie = CalculeTaille(Sortie);
 
@@ -125,7 +125,7 @@ int main(int argc, char** argv)
         return 1;
     }
 
-    //ouverture du fichier d'entrée et de sortie
+    //ouverture des fichiers d'entrée et de sortie
 
     FILE* entree = OuvertureFichier( argv[1], "r" );
     FILE* sortie = OuvertureFichier( strcat(argv[2],".huf"), "w" );

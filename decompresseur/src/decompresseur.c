@@ -9,7 +9,7 @@ int verifOctetsMagiques(FILE* Entree)
 
 int reconstructionArbreRecursion(FILE* Entree, Noeud* Arbre, int* Prochain_indice)
 {
-    if( fgetc(Entree)==0 ) // je suis sur une feulles
+    if( fgetc(Entree)==0 ) // je suis sur une feuille
     {
         return fgetc(Entree);
     }
@@ -46,9 +46,9 @@ Noeud* ReconstructionArbre(FILE* Entree)
 }
 int VerifDernierOctet(FILE* Entree)
 {
-    if ( (getc(Entree))!= EOF ) //si le prochain octect est la fin du fichier
+    if ( (getc(Entree))!= EOF ) // vérifie si le prochain octet est la fin du fichier
     {
-        fseek(Entree,-1, SEEK_CUR);//retour du cursseur a la position d'origine
+        fseek(Entree,-1, SEEK_CUR);//retour du curseur à la position d'origine
         return 0;
     }
     fseek(Entree,-1, SEEK_CUR);
@@ -75,7 +75,7 @@ void DecodageCaracteres(FILE* Entree, FILE* Sortie, Noeud* Arbre, int Quantite_u
         for(int Bit_actuel = 7 ; Bit_actuel >= Decalage ; Bit_actuel--)
         {
 
-            if ( (Octet_actuel >> Bit_actuel) % 2 ) //si lie un 0
+            if ( (Octet_actuel >> Bit_actuel) % 2 ) //si lit un 0
             {
                 if ( Arbre[Arbre[Indice].fd].fd == -1 )
                 {
@@ -87,9 +87,9 @@ void DecodageCaracteres(FILE* Entree, FILE* Sortie, Noeud* Arbre, int Quantite_u
                     Indice = Arbre[Indice].fd;
                 }
             }
-            else //si lie un 1
+            else //si lit un 1
             {
-                if ( Arbre[Arbre[Indice].fg].fg == -1 ) ///A A A A A EXTRAIIIIRE
+                if ( Arbre[Arbre[Indice].fg].fg == -1 )
                 {
                     fputc(Arbre[Indice].fg, Sortie);
                     Indice=256;
@@ -110,7 +110,7 @@ int Decompression(FILE* Entree, FILE* Sortie)
 
     printf("Décomprétion\n");
 
-    //FONCTION : verifie la présences des octect magique
+    //FONCTION : verifie la présences des octets magiques
     if ( !verifOctetsMagiques( Entree ) )
     {
         return ERR_FORMAT;
@@ -124,15 +124,12 @@ int Decompression(FILE* Entree, FILE* Sortie)
         //FONCTION reconstruction de l'arbre
         Noeud* Arbre = ReconstructionArbre(Entree);
 
-        //FONCTION écriture des carracteres
+        //FONCTION écriture des caractères
         DecodageCaracteres(Entree, Sortie, Arbre, Quantite_utilise);
 
-        //destruction de larbre
+        //destruction de l'arbre
         free(Arbre);
     }
 
     return 0;
 }
-
-
-//TODO : VALGRIND

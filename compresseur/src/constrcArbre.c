@@ -15,7 +15,7 @@ void IniTabl(double* tabfrequence, Noeud* Arbre)
         Arbre[i].frequences=0;
     }
 
-    //initialisation des fréquences avec les valeurs a partir du tableau de frequences calculer a partir du document
+    //initialisation des fréquences avec les valeurs à partir du tableau de frequences calculées a partir du fichier d'entrée
     if ( tabfrequence != NULL)
     {
         for(int j=0 ; j<256 ; j++)
@@ -26,7 +26,7 @@ void IniTabl(double* tabfrequence, Noeud* Arbre)
 }
 
 
-//FONCTION : determine le noeud de frequences les plus faibles
+//FONCTION : determine les deux noeud de frequence les plus faibles
 int NoeudMin(Noeud* Arbre, int Indice_precedent)
 {
     double Frequence_min = 1;
@@ -50,7 +50,7 @@ int NoeudMin(Noeud* Arbre, int Indice_precedent)
 void NoeudPere(Noeud* Arbre, int* Nouv_noeud, int Indice_min1, int Indice_min2)
 {
 
-    if ( Indice_min2 != -1) //si 2 fils son disponible
+    if ( Indice_min2 != -1) //si 2 fils sont disponibles
     {
         Arbre[*Nouv_noeud].fg = Indice_min1;
         Arbre[*Nouv_noeud].fd = Indice_min2;
@@ -61,11 +61,11 @@ void NoeudPere(Noeud* Arbre, int* Nouv_noeud, int Indice_min1, int Indice_min2)
     }
     else
     {
-        if ( Indice_min1 == -1 ) // si aucun fils de disponible
+        if ( Indice_min1 == -1 ) // si aucun fils n'est disponible
         {
             *Nouv_noeud = -1;
         }
-        else //si 1 seul fils de disponible
+        else //si 1 seul fils est disponible
         {
             Arbre[*Nouv_noeud].fg = Indice_min1;
             Arbre[*Nouv_noeud].fd = '\0';
@@ -96,7 +96,7 @@ int ConstrcArbre(double* Tab_frequence, Noeud* Arbre)
     int Nb_noeud = 2 * Nb_Feuilles - 1;
     int Noeuds_utilises = Nb_Feuilles;
 
-    //trouver le noeuds minimeaux et cosntruction de l'arbre
+    //trouve les noeuds minimaux et construction de l'arbre
     int Indice_min1;
     int Indice_min2;
     int Nouv_noeud = 256;

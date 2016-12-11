@@ -36,11 +36,11 @@ int main(int argc, char** argv)
         return 1;
     }
 
-    //ouverture du fichier d'entrée et de sortie
+    //ouverture des fichiers d'entrée et de sortie
     FILE* Entree = OuvertureFichier( argv[1], "r" );
     FILE* Sortie = OuvertureFichier( "Résultat", "w" );
 
-    //Decompréssion
+    //Decompression
     Decompression(Entree, Sortie);
 
     //fermeture des fichiers
