@@ -108,7 +108,7 @@ void DecodageCaracteres(FILE* Entree, FILE* Sortie, Noeud* Arbre, int Quantite_u
 int Decompression(FILE* Entree, FILE* Sortie)
 {
 
-    printf("Décomprétion\n");
+    printf("Décompression\n");
 
     //FONCTION : verifie la présences des octets magiques
     if ( !verifOctetsMagiques( Entree ) )

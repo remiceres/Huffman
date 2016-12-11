@@ -32,7 +32,7 @@ void Compression(FILE* Entree,FILE* Sortie)
     double* Tab_frequence = CalculFrequencesCaractere(Entree);
 
     //Affichage des fréquences de chaque caractère si non null
-    printf("\nCaractères et de leur probabilité d’apparition : \n \n");
+    printf("\nCaractères et  leur probabilité d’apparition : \n \n");
     for(int a=0 ; a<256 ; a++)
     {
         if( Tab_frequence[a] != 0)
@@ -65,7 +65,7 @@ void Compression(FILE* Entree,FILE* Sortie)
     char** Index = CodeBin(Arbre, Ind_racine);
 
     //affiche l'index
-    printf("Codes binaire de chaque caractère : \n \n");
+    printf("Code binaire de chaque caractère : \n \n");
     float Somme = 0;
     int Nb = 0;
     for(int a=0 ; a<256 ; a++)
@@ -77,7 +77,7 @@ void Compression(FILE* Entree,FILE* Sortie)
             printf("%d = %s\n", a , Index[a]);
         }
     }
-    printf("La longeur moyenne des codes est de %f", Somme/Nb );
+    printf("La longueur moyenne des codes est de %f", Somme/Nb );
     printf("\n \n");
 
     //fonction: écriture du fichier de sortie
