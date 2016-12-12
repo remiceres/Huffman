@@ -121,7 +121,7 @@ int main(int argc, char** argv)
     //vérifie le nombre d'arguments.
     if(argc!=3)
     {
-        fprintf(stderr, "Usage: huff [Fichier source] [Fichier destination]\n" );
+        fprintf(stderr, "Usage: huf [Fichier source] [Fichier destination]\n" );
         return 1;
     }
 
