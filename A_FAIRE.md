@@ -1,4 +1,3 @@
-* Make propre
 * Générer document Doxygen
 * Fermez tous les trucs ouverts avec mattézob logiciel
 * Fichier README avec la manière d'utilisation, nos bugs résiduels, et les fichiers testés
