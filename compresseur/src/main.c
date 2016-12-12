@@ -91,6 +91,10 @@ void Compression(FILE* Entree,FILE* Sortie)
 
     //destruction des tableaux
     free(Tab_frequence);
+    for(int i=0; i<256 ; i++)
+    {
+        free(Index[i]);
+    }
     free(Index);
 
 }
