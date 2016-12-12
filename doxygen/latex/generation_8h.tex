@@ -1,0 +1,57 @@
+\hypertarget{generation_8h}{}\section{Référence du fichier compresseur/include/generation.h}
+\label{generation_8h}\index{compresseur/include/generation.\+h@{compresseur/include/generation.\+h}}
+
+
+Déclaration de la fonction de génération du fichier compressé  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}def\+Noeud.\+h\char`\"{}}\\*
+Graphe des dépendances par inclusion de generation.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{generation_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{generation_8h_adc2a740eb2845a8ae19a32bb666f40cc}{Generation} (char $\ast$$\ast$index, F\+I\+LE $\ast$entre, F\+I\+LE $\ast$sortie, int racine, \hyperlink{compresseur_2include_2defNoeud_8h_aff1a0e48483c61f8f52fee44eccc3f42}{Noeud} $\ast$arbre)
+\begin{DoxyCompactList}\small\item\em Ecrit dans le fichier \char`\"{}compressé\char`\"{} les codes binaires des caractères. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Déclaration de la fonction de génération du fichier compressé 
+
+
+
+\subsection{Documentation des fonctions}
+\index{generation.\+h@{generation.\+h}!Generation@{Generation}}
+\index{Generation@{Generation}!generation.\+h@{generation.\+h}}
+\subsubsection[{\texorpdfstring{Generation(char $\ast$$\ast$index, F\+I\+L\+E $\ast$entre, F\+I\+L\+E $\ast$sortie, int racine, Noeud $\ast$arbre)}{Generation(char **index, FILE *entre, FILE *sortie, int racine, Noeud *arbre)}}]{\setlength{\rightskip}{0pt plus 5cm}void Generation (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{index, }
+\item[{F\+I\+LE $\ast$}]{entre, }
+\item[{F\+I\+LE $\ast$}]{sortie, }
+\item[{int}]{racine, }
+\item[{{\bf Noeud} $\ast$}]{arbre}
+\end{DoxyParamCaption}
+)}\hypertarget{generation_8h_adc2a740eb2845a8ae19a32bb666f40cc}{}\label{generation_8h_adc2a740eb2845a8ae19a32bb666f40cc}
+
+
+Ecrit dans le fichier \char`\"{}compressé\char`\"{} les codes binaires des caractères. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em index} & Tableau de codes binaires associés aux différents caractères \\
+\hline
+{\em entre} & Fichier d\textquotesingle{}entrée \\
+\hline
+{\em sorti} & Fichier de sortie (fichier compressé) \\
+\hline
+{\em racine} & Indice de la racine de l\textquotesingle{}arbre \\
+\hline
+{\em arbre} & Arbre \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,47 @@
+\hypertarget{frequences_8h}{}\section{Référence du fichier compresseur/include/frequences.h}
+\label{frequences_8h}\index{compresseur/include/frequences.\+h@{compresseur/include/frequences.\+h}}
+
+
+Définit la fonction de génération des fréquences.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+Graphe des dépendances par inclusion de frequences.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{frequences_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+double $\ast$ \hyperlink{frequences_8h_a553c3efaccc63f838769a8829eba15ed}{Calcul\+Frequences\+Caractere} (F\+I\+LE $\ast$fichier)
+\begin{DoxyCompactList}\small\item\em Fonction de calcul de la répartition des fréquences dans un fichier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Définit la fonction de génération des fréquences. 
+
+
+
+\subsection{Documentation des fonctions}
+\index{frequences.\+h@{frequences.\+h}!Calcul\+Frequences\+Caractere@{Calcul\+Frequences\+Caractere}}
+\index{Calcul\+Frequences\+Caractere@{Calcul\+Frequences\+Caractere}!frequences.\+h@{frequences.\+h}}
+\subsubsection[{\texorpdfstring{Calcul\+Frequences\+Caractere(\+F\+I\+L\+E $\ast$fichier)}{CalculFrequencesCaractere(FILE *fichier)}}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ Calcul\+Frequences\+Caractere (
+\begin{DoxyParamCaption}
+\item[{F\+I\+LE $\ast$}]{fichier}
+\end{DoxyParamCaption}
+)}\hypertarget{frequences_8h_a553c3efaccc63f838769a8829eba15ed}{}\label{frequences_8h_a553c3efaccc63f838769a8829eba15ed}
+
+
+Fonction de calcul de la répartition des fréquences dans un fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em fichier} & Fichier où les fréquences des caractères doivent être calculées \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+tab\+\_\+frequence Un tableau contenant les fréquences des caractères contenus dans le fichier. L\textquotesingle{}indice d\textquotesingle{}une case correspond au code A\+S\+C\+II du caractère correspondant 
+\end{DoxyReturn}

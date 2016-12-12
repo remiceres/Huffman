@@ -1,0 +1,9 @@
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "Projet Huffman"
+PROJECT_NUMBER         = 0.1
+PROJECT_BRIEF          = "Réalisation d'un compresseur de Huffman dans le cadre de l'UE Systèmes d'exploitation en L2 CMI 2016-2017 à l'UM"
+
+OUTPUT_DIRECTORY       = "./doxygen"
+RECURSIVE              = YES
+OUTPUT_LANGUAGE        = French
+OPTIMIZE_OUTPUT_FOR_C  = YES
