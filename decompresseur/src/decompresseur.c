@@ -80,6 +80,7 @@ void DecodageCaracteres(FILE* Entree, FILE* Sortie, Noeud* Arbre, int Quantite_u
                 if ( Arbre[Arbre[Indice].fd].fd == -1 )
                 {
                     fputc(Arbre[Indice].fd, Sortie);
+                    printf("%c",Arbre[Indice].fd );
                     Indice=256;
                 }
                 else
@@ -92,6 +93,7 @@ void DecodageCaracteres(FILE* Entree, FILE* Sortie, Noeud* Arbre, int Quantite_u
                 if ( Arbre[Arbre[Indice].fg].fg == -1 )
                 {
                     fputc(Arbre[Indice].fg, Sortie);
+                    printf("%c",Arbre[Indice].fg );
                     Indice=256;
                 }
                 else

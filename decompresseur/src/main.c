@@ -32,7 +32,7 @@ int main(int argc, char** argv)
     //vérifie le nombre d'arguments.
     if(argc!=2)
     {
-        fprintf(stderr, "Usage: huff [Fichier source] \n" );
+        fprintf(stderr, "Usage: dehuf [Fichier source] \n" );
         return 1;
     }
 
@@ -42,6 +42,9 @@ int main(int argc, char** argv)
 
     //Decompression
     Decompression(Entree, Sortie);
+
+    // Pour améliorer affichage du fichier de sortie sur le terminal
+    printf("\n");
 
     //fermeture des fichiers
     fclose(Entree);
