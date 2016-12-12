@@ -6,6 +6,5 @@ PROG=dehuf
 $(PROG): $(OBJECTS)
 	$(CC) $(OBJECTS) $(CFLAGS) -o $(PROG)
 
-
 clean:
 	rm -f src\/*.o $(PROG) Résultat
