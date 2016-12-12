@@ -1,7 +1,8 @@
 * Make propre
-* Doxygene
+* Générer document Doxygen
 * Fermez tous les trucs ouverts avec mattézob logiciel
 * Fichier README avec la manière d'utilisation, nos bugs résiduels, et les fichiers testés
 * Rapprt de 1 a 2 pages ( fonctionnement, test, bug, structure fichier compréser, choix technique)
 * Rajout d'une fonction dans le décompresseur pour afficher le fichier de sortie sur le terminal
 * Améliorer l'affichage du compresseur
+
