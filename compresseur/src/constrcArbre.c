@@ -71,6 +71,11 @@ void NoeudPere(Noeud* Arbre, int* Nouv_noeud, int Indice_min1, int Indice_min2)
             Arbre[*Nouv_noeud].fd = '\0';
 
             Arbre[Indice_min1].pere = *Nouv_noeud;
+            Arbre['\0'].pere = *Nouv_noeud;
+
+            Arbre[*Nouv_noeud].frequences = Arbre[Indice_min1].frequences + Arbre['\0'].frequences;
+
+
         }
     }
     (*Nouv_noeud)++;

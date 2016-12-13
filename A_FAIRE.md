@@ -1,14 +1,48 @@
 # consignes
 
 ## A faire
-* Envoyer à meynard@lirmm.fr et pompidor@lirmm.fr
-* Archive nommée par les noms du groupe
-* Fichier README qui indiquera l’état d’avancement de votre projet (et par exemple les bogues résiduels)
+
+
 * un micro rapport papier de 1 à 2 pages décrivant les choix importants effectués PAPIER;
-* les listings (fichiers sources) documentés (doxygen) PAPIER
-* des réponses aux questions indiquées dans le CC
+
+
+* Taille originelle de la source, taille compressée et gain en pourcentage (Taille originelle : 5194; taille compressée : 3761; gain : 27.6% !)
+
 * affichage propre
 
+
+* Fichier README qui indiquera l’état d’avancement de votre projet (et par exemple les bogues résiduels)
+
+* les listings (fichiers sources) documentés (doxygen) PAPIER
+* doxygen
+* cd/latex
+* make
+
+
+* Archive nommée par les noms du groupe
+
+* Envoyer à meynard@lirmm.fr et pompidor@lirmm.fr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+======================================================================
 
 * Quel est le nombre maximum de caractères (char) différents ?
     * Le nombre maximum de caractères est 256.
@@ -30,14 +64,3 @@ prendre les bits de complétion pour des bits de données ?
     * Lors de la décomprétion on vérifie si on est a la fin du fichier, si c'est le cas on ne traite que les bits utile récupéré dans l'entête
 * Le décompresseur doit-il reconstituer l’arbre ? Comment ?
     * oui, a partir de l'entête.
-
-
-## cahier des charge du programme
-* projet est décomposé en deux programmes C : huf.c ($huf source dest) / dehuf.c ($dehuf source)
-* Compression  afficher les informations suivantes sur la sortie standard :
-    * Liste des caractères et de leur probabilité d’apparition ;    
-    * Arbre de Huffman (tableaux fg fd parent ou par indentation) ;
-    * affichage des codes de chaque caractère (codeChar(E)=010100) ;
-    * longueur moyenne de codage ;
-    * Taille originelle de la source, taille compressée et gain en pourcentage (Taille originelle : 5194; taille compressée : 3761; gain : 27.6% !)
-* Le fichier décompressé sera envoyé directement sur la sortie

@@ -14,13 +14,14 @@ void AffichageArbre(Noeud* Arbre, int Ind_racine)
 {
     if(Ind_racine!=-1)
     {
-        printf("Noeud : %d | Fils gauche : %d | Fils droit : %d | Père : %d | Frequences : %f \n", Ind_racine, Arbre[Ind_racine].fg, Arbre[Ind_racine].fd, Arbre[Ind_racine].pere, Arbre[Ind_racine].frequences );
+
+        printf("│ %-5d │ %-11d │ %-10d │ %-4d │ %-10f │\n", Ind_racine, Arbre[Ind_racine].fg, Arbre[Ind_racine].fd, Arbre[Ind_racine].pere, Arbre[Ind_racine].frequences );
         AffichageArbre(Arbre, Arbre[Ind_racine].fg);
         AffichageArbre(Arbre, Arbre[Ind_racine].fd);
     }
 }
 
-double CalculeTaille(FILE* Fichier)
+long int CalculeTaille(FILE* Fichier)
 {
     fseek(Fichier, 0, SEEK_END);
     return ftell(Fichier);
@@ -43,7 +44,7 @@ void Compression(FILE* Entree,FILE* Sortie)
     {
         if( Tab_frequence[a] != 0)
         {
-            printf("│        %-3d │                 %f │\n", a , Tab_frequence[a]);
+            printf("│%-11d │%-25f │\n", a , Tab_frequence[a]);
 
         }
     }
@@ -64,8 +65,12 @@ void Compression(FILE* Entree,FILE* Sortie)
 
     //affiche l'arbre
     printf("\nArbre de Huffman : \n");
-    printf("┌────────────┬──────────────────────────┐\n");
+    printf("┌───────┬─────────────┬────────────┬──────┬────────────┐\n");
+    printf("│ Noeud │ Fils gauche │ Fils droit │ Père │ Frequences │\n");
+    printf("├───────┼─────────────┼────────────┼──────┼────────────┤\n");
     AffichageArbre(Arbre, Ind_racine);
+    printf("└───────┴─────────────┴────────────┴──────┴────────────┘\n");
+
     printf("\n \n");
 
 
@@ -74,7 +79,12 @@ void Compression(FILE* Entree,FILE* Sortie)
     char** Index = CodeBin(Arbre, Ind_racine);
 
     //affiche l'index
-    printf("Code binaire de chaque caractère : \n \n");
+    printf("Code binaire de chaque caractère :\n");
+    printf("┌────────────┬──────────────────────────────────┐\n");
+    printf("│ Caractères │ Code binaire                     │\n");
+    printf("├────────────┼──────────────────────────────────┤\n");
+
+
     float Somme = 0;
     int Nb = 0;
     for(int a=0 ; a<256 ; a++)
@@ -83,20 +93,22 @@ void Compression(FILE* Entree,FILE* Sortie)
         {
             Nb++;
             Somme += strlen(Index[a]);
-            printf("%d = %s\n", a , Index[a]);
+            printf("│ %-10d │ %-32s │\n", a , Index[a]);
         }
     }
-    printf("La longueur moyenne des codes est de %f", Somme/Nb );
+    printf("└────────────┴──────────────────────────────────┘ \n");
+
+    printf("\nLa longueur moyenne des codes est de %f", Somme/Nb );
     printf("\n \n");
 
     //fonction: écriture du fichier de sortie
     Generation(Index, Entree, Sortie, Ind_racine, Arbre);
 
     //affiche le ratio de compression
-    double Taille_Entree = CalculeTaille(Entree);
-    double Taille_Sortie = CalculeTaille(Sortie);
+    long int Taille_Entree = CalculeTaille(Entree);
+    long int Taille_Sortie = CalculeTaille(Sortie);
 
-    printf("Taille originelle : %f octets\nTaille compressée : %f octets\nCompression : %f%s\n", Taille_Entree, Taille_Sortie, Taille_Sortie/Taille_Entree*100, "%");
+    printf("Taille originelle : %ld octets\nTaille compressée : %ld octets\n\nCompression : %f%s\n", Taille_Entree, Taille_Sortie, (float)Taille_Sortie/(float)Taille_Entree*100, "%");
 
     //destruction des tableaux
     free(Tab_frequence);
