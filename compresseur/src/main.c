@@ -3,6 +3,7 @@
 #include <string.h>
 #include <errno.h>
 
+
 #include "../include/frequences.h"
 #include "../include/constrcArbre.h"
 #include "../include/defNoeud.h"
@@ -32,14 +33,21 @@ void Compression(FILE* Entree,FILE* Sortie)
     double* Tab_frequence = CalculFrequencesCaractere(Entree);
 
     //Affichage des fréquences de chaque caractère si non null
-    printf("\nCaractères et  leur probabilité d’apparition : \n \n");
+    printf("\nCaractères et leur probabilité d’apparition :\n");
+    printf("┌────────────┬──────────────────────────┐\n");
+    printf("│ Caractères │ Probabilité d’apparition │\n");
+    printf("├────────────┼──────────────────────────┤\n");
+
+
     for(int a=0 ; a<256 ; a++)
     {
         if( Tab_frequence[a] != 0)
         {
-            printf("%d = %f\n", a , Tab_frequence[a]);
+            printf("│        %-3d │                 %f │\n", a , Tab_frequence[a]);
+
         }
     }
+    printf("└────────────┴──────────────────────────┘ \n");
     printf("\n \n");
 
 
@@ -55,7 +63,8 @@ void Compression(FILE* Entree,FILE* Sortie)
     Ind_racine = ConstrcArbre(Tab_frequence, Arbre);
 
     //affiche l'arbre
-    printf("Arbre de Huffman : \n \n");
+    printf("\nArbre de Huffman : \n");
+    printf("┌────────────┬──────────────────────────┐\n");
     AffichageArbre(Arbre, Ind_racine);
     printf("\n \n");
 
