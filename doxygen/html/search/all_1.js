@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['decompresseur_2eh',['decompresseur.h',['../decompresseur_8h.html',1,'']]],
-  ['decompression',['Decompression',['../decompresseur_8h.html#af0fd45634711c97682ab76904e95753e',1,'decompresseur.c']]],
-  ['defnoeud_2eh',['defNoeud.h',['../compresseur_2include_2defNoeud_8h.html',1,'']]],
-  ['defnoeud_2eh',['defNoeud.h',['../decompresseur_2include_2defNoeud_8h.html',1,'']]]
+  ['calculfrequencescaractere',['CalculFrequencesCaractere',['../frequences_8h.html#a553c3efaccc63f838769a8829eba15ed',1,'frequences.c']]],
+  ['codebin',['CodeBin',['../codeBin_8h.html#a621215604ceaeeba93074a0054b61afa',1,'codeBin.c']]],
+  ['codebin_2eh',['codeBin.h',['../codeBin_8h.html',1,'']]],
+  ['constrcarbre',['ConstrcArbre',['../constrcArbre_8h.html#ae79a742ba5b273ece919e51cfd01e805',1,'constrcArbre.c']]],
+  ['constrcarbre_2eh',['constrcArbre.h',['../constrcArbre_8h.html',1,'']]]
 ];

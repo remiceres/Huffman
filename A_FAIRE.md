@@ -1,19 +1,18 @@
-# consignes
+# A faire
 
-## A faire
-
-
-* un micro rapport papier de 1 à 2 pages décrivant les choix importants effectués PAPIER;
-
-* Taille originelle de la source, taille compressée et gain en pourcentage (Taille originelle : 5194; taille compressée : 3761; gain : 27.6% !)
+* Corrigé fautes du micro rapport PAPIER.
 
 * Fichier README qui indiquera l’état d’avancement de votre projet (et par exemple les bogues résiduels)
+    * pas eu le temps de faire l'arvhiveur en python
+    * pas eu le temps de compressé le stokage de l'arbre bits a bits.
+
+* corrigé docs
+
 
 * les listings (fichiers sources) documentés (doxygen) PAPIER
-* doxygen
-* cd/latex
-* make
-
+    * doxygen
+    * cd/latex
+    * make
 
 * Archive nommée par les noms du groupe
 
@@ -51,12 +50,12 @@
 * Le préfixe du fichier compressé doit-il nécessairement contenir l’arbre ou les codes des caractères ou bien les
 deux (critère d’efficacité) ?
     * Le préfixe du fichier compressé doit contenir soit l'arbre soit les codes des caractères.
-    * Stocker l'arbre est plus efficace que stoker les codes des caractères.
+    * Stocker l'arbre est plus efficace en terme de taille de stokage ainsi qu'en efficacité lors de la décomprétion.
 * Quelle est la taille minimale de ce préfixe (expliquer chaque champ et sa longueur) ?
-    * Le préfixe est composé de 3 octet magiques permétant d'identifié pouvant être décompréssé. 1 octet représentant le nombre de bits utile du dernier octet puis l'arbre.
+    * Le préfixe est composé de 3 octet magiques (Pas obligatoire) permétant d'identifié pouvant être décompréssé. 1 octet représentant le nombre de bits utile du dernier octet puis l'arbre.
 * Si le dernier caractère écrit ne finit pas sur une frontière d’octet, comment le compléter ? Comment ne pas
 prendre les bits de complétion pour des bits de données ?
     * on le complete avc des 0 inutile.
-    * Lors de la décomprétion on vérifie si on est a la fin du fichier, si c'est le cas on ne traite que les bits utile récupéré dans l'entête
+    * Lors de la décomprétion on vérifie si on est sur le dernier octet, si c'est le cas on ne traite que les bits utile. le nombre de bits utile a été récupéré dans l'entête.
 * Le décompresseur doit-il reconstituer l’arbre ? Comment ?
-    * oui, a partir de l'entête.
+    * oui, a partir de l'entête. Dans notre cas l'arbre est reconstruit dans un tableau de `Noeuds`.

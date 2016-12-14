@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Projet Huffman: consignes</title>
+<title>Projet Huffman: A faire</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -78,14 +78,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">consignes </div>  </div>
+<div class="title">A faire </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>A faire</h2>
-<ul>
-<li>un micro rapport papier de 1 à 2 pages décrivant les choix importants effectués PAPIER;</li>
-<li>Taille originelle de la source, taille compressée et gain en pourcentage (Taille originelle : 5194; taille compressée : 3761; gain : 27.6% !)</li>
-<li>Fichier README qui indiquera l’état d’avancement de votre projet (et par exemple les bogues résiduels)</li>
+<div class="textblock"><ul>
+<li>Corrigé fautes du micro rapport PAPIER.</li>
+<li>Fichier README qui indiquera l’état d’avancement de votre projet (et par exemple les bogues résiduels)<ul>
+<li>pas eu le temps de faire l'arvhiveur en python</li>
+<li>pas eu le temps de compressé le stokage de l'arbre bits a bits.</li>
+</ul>
+</li>
 <li>les listings (fichiers sources) documentés (doxygen) PAPIER</li>
 <li>doxygen</li>
 <li>cd/latex</li>
@@ -111,20 +113,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 </li>
 <li>Le préfixe du fichier compressé doit-il nécessairement contenir l’arbre ou les codes des caractères ou bien les deux (critère d’efficacité) ?<ul>
 <li>Le préfixe du fichier compressé doit contenir soit l'arbre soit les codes des caractères.</li>
-<li>Stocker l'arbre est plus efficace que stoker les codes des caractères.</li>
+<li>Stocker l'arbre est plus efficace en terme de taille de stokage ainsi qu'en efficacité lors de la décomprétion.</li>
 </ul>
 </li>
 <li>Quelle est la taille minimale de ce préfixe (expliquer chaque champ et sa longueur) ?<ul>
-<li>Le préfixe est composé de 3 octet magiques permétant d'identifié pouvant être décompréssé. 1 octet représentant le nombre de bits utile du dernier octet puis l'arbre.</li>
+<li>Le préfixe est composé de 3 octet magiques (Pas obligatoire) permétant d'identifié pouvant être décompréssé. 1 octet représentant le nombre de bits utile du dernier octet puis l'arbre.</li>
 </ul>
 </li>
 <li>Si le dernier caractère écrit ne finit pas sur une frontière d’octet, comment le compléter ? Comment ne pas prendre les bits de complétion pour des bits de données ?<ul>
 <li>on le complete avc des 0 inutile.</li>
-<li>Lors de la décomprétion on vérifie si on est a la fin du fichier, si c'est le cas on ne traite que les bits utile récupéré dans l'entête</li>
+<li>Lors de la décomprétion on vérifie si on est sur le dernier octet, si c'est le cas on ne traite que les bits utile. le nombre de bits utile a été récupéré dans l'entête.</li>
 </ul>
 </li>
 <li>Le décompresseur doit-il reconstituer l’arbre ? Comment ?<ul>
-<li>oui, a partir de l'entête. </li>
+<li>oui, a partir de l'entête. Dans notre cas l'arbre est reconstruit dans un tableau de <code>Noeuds</code>. </li>
 </ul>
 </li>
 </ul>

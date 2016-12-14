@@ -31,6 +31,8 @@
 
   \item {fd}
     \subitem {noeud}, \hyperpage{9}
+  \item {fg}
+    \subitem {noeud}, \hyperpage{9}
   \item {frequences}
     \subitem {noeud}, \hyperpage{9}
   \item {frequences.\+h}
@@ -50,6 +52,13 @@
     \subitem {decompresseur/include/def\+Noeud.\+h}, \hyperpage{14}
   \item {noeud}, \hyperpage{9}
     \subitem {fd}, \hyperpage{9}
+    \subitem {fg}, \hyperpage{9}
     \subitem {frequences}, \hyperpage{9}
+    \subitem {pere}, \hyperpage{10}
+
+  \indexspace
+
+  \item {pere}
+    \subitem {noeud}, \hyperpage{10}
 
 \end{theindex}

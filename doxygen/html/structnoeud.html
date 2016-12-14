@@ -98,11 +98,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Champs de données</h2></td></tr>
-<tr class="memitem:aa5b03ff1fc332c2390f0324398c0ee1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5b03ff1fc332c2390f0324398c0ee1d"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>pere</b></td></tr>
+<tr class="memitem:aa5b03ff1fc332c2390f0324398c0ee1d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnoeud.html#aa5b03ff1fc332c2390f0324398c0ee1d">pere</a></td></tr>
 <tr class="separator:aa5b03ff1fc332c2390f0324398c0ee1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae14c26edcd37240fc9f8e3769d55d3e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae14c26edcd37240fc9f8e3769d55d3e5"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>fg</b></td></tr>
+<tr class="memitem:ae14c26edcd37240fc9f8e3769d55d3e5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnoeud.html#ae14c26edcd37240fc9f8e3769d55d3e5">fg</a></td></tr>
 <tr class="separator:ae14c26edcd37240fc9f8e3769d55d3e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72ced58e381fdf4144d295884dcd7168"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnoeud.html#a72ced58e381fdf4144d295884dcd7168">fd</a></td></tr>
 <tr class="separator:a72ced58e381fdf4144d295884dcd7168"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,7 +109,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>fg</b></td></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
 <div class="textblock"><p>Noeud d'un arbre binaire. </p>
-<p>Noeud est une petite structure comportant les indices de son noeud père et de ses noeuds fils (droit et gauche). Lui est également associé la fréquence d'apparation dans un fichier du caractère associé à ce noeud.</p>
+<p>Noeud est une petite structure comportant les indices de son noeud père et de ses noeuds fils. Lui est également associé la fréquence d'apparation dans un fichier du caractère associé à ce noeud.</p>
 <p>Noeud est une petite structure comportant les indices de son noeud père et de ses noeuds fils. Lui est également associé la fréquence d'apparation dans un fichier du caractère associé à ce noeud </p>
 </div><h2 class="groupheader">Documentation des champs</h2>
 <a class="anchor" id="a72ced58e381fdf4144d295884dcd7168"></a>
@@ -123,7 +121,21 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>fg</b></td></
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Indices du fils droit</p>
 <p>Indices des noeuds père, fils gauche et fils droit </p>
+
+</div>
+</div>
+<a class="anchor" id="ae14c26edcd37240fc9f8e3769d55d3e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int noeud::fg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indices du fils gauche </p>
 
 </div>
 </div>
@@ -137,6 +149,19 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>fg</b></td></
       </table>
 </div><div class="memdoc">
 <p>Fréquence d'apparation du caractère lié au noeud </p>
+
+</div>
+</div>
+<a class="anchor" id="aa5b03ff1fc332c2390f0324398c0ee1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int noeud::pere</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indices du noeud père </p>
 
 </div>
 </div>

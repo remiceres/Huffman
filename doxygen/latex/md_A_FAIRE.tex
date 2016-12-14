@@ -1,10 +1,11 @@
-\subsection*{A faire}
-
 
 \begin{DoxyItemize}
-\item un micro rapport papier de 1 à 2 pages décrivant les choix importants effectués P\+A\+P\+I\+ER;
-\item Taille originelle de la source, taille compressée et gain en pourcentage (Taille originelle \+: 5194; taille compressée \+: 3761; gain \+: 27.\+6\% !)
+\item Corrigé fautes du micro rapport P\+A\+P\+I\+ER.
 \item Fichier R\+E\+A\+D\+ME qui indiquera l’état d’avancement de votre projet (et par exemple les bogues résiduels)
+\begin{DoxyItemize}
+\item pas eu le temps de faire l\textquotesingle{}arvhiveur en python
+\item pas eu le temps de compressé le stokage de l\textquotesingle{}arbre bits a bits.
+\end{DoxyItemize}
 \item les listings (fichiers sources) documentés (doxygen) P\+A\+P\+I\+ER
 \item doxygen
 \item cd/latex
@@ -36,19 +37,19 @@
 \item Le préfixe du fichier compressé doit-\/il nécessairement contenir l’arbre ou les codes des caractères ou bien les deux (critère d’efficacité) ?
 \begin{DoxyItemize}
 \item Le préfixe du fichier compressé doit contenir soit l\textquotesingle{}arbre soit les codes des caractères.
-\item Stocker l\textquotesingle{}arbre est plus efficace que stoker les codes des caractères.
+\item Stocker l\textquotesingle{}arbre est plus efficace en terme de taille de stokage ainsi qu\textquotesingle{}en efficacité lors de la décomprétion.
 \end{DoxyItemize}
 \item Quelle est la taille minimale de ce préfixe (expliquer chaque champ et sa longueur) ?
 \begin{DoxyItemize}
-\item Le préfixe est composé de 3 octet magiques permétant d\textquotesingle{}identifié pouvant être décompréssé. 1 octet représentant le nombre de bits utile du dernier octet puis l\textquotesingle{}arbre.
+\item Le préfixe est composé de 3 octet magiques (Pas obligatoire) permétant d\textquotesingle{}identifié pouvant être décompréssé. 1 octet représentant le nombre de bits utile du dernier octet puis l\textquotesingle{}arbre.
 \end{DoxyItemize}
 \item Si le dernier caractère écrit ne finit pas sur une frontière d’octet, comment le compléter ? Comment ne pas prendre les bits de complétion pour des bits de données ?
 \begin{DoxyItemize}
 \item on le complete avc des 0 inutile.
-\item Lors de la décomprétion on vérifie si on est a la fin du fichier, si c\textquotesingle{}est le cas on ne traite que les bits utile récupéré dans l\textquotesingle{}entête
+\item Lors de la décomprétion on vérifie si on est sur le dernier octet, si c\textquotesingle{}est le cas on ne traite que les bits utile. le nombre de bits utile a été récupéré dans l\textquotesingle{}entête.
 \end{DoxyItemize}
 \item Le décompresseur doit-\/il reconstituer l’arbre ? Comment ?
 \begin{DoxyItemize}
-\item oui, a partir de l\textquotesingle{}entête. 
+\item oui, a partir de l\textquotesingle{}entête. Dans notre cas l\textquotesingle{}arbre est reconstruit dans un tableau de {\ttfamily Noeuds}. 
 \end{DoxyItemize}
 \end{DoxyItemize}
