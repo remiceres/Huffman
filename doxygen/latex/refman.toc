@@ -1,41 +1,40 @@
 \select@language {french}
-\contentsline {chapter}{\numberline {1}A faire}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Compresseur de Huffman}{3}{chapter.2}
-\contentsline {chapter}{\numberline {3}Index des structures de donn\IeC {\'e}es}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Structures de donn\IeC {\'e}es}{5}{section.3.1}
-\contentsline {chapter}{\numberline {4}Index des fichiers}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}Liste des fichiers}{7}{section.4.1}
-\contentsline {chapter}{\numberline {5}Documentation des structures de donn\IeC {\'e}es}{9}{chapter.5}
-\contentsline {section}{\numberline {5.1}R\IeC {\'e}f\IeC {\'e}rence de la structure noeud}{9}{section.5.1}
+\contentsline {chapter}{\numberline {1}Compresseur de Huffman}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Index des structures de donn\IeC {\'e}es}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Structures de donn\IeC {\'e}es}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Index des fichiers}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Liste des fichiers}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Documentation des structures de donn\IeC {\'e}es}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}R\IeC {\'e}f\IeC {\'e}rence de la structure noeud}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Description d\IeC {\'e}taill\IeC {\'e}e}{7}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Documentation des champs}{7}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}fd}{7}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}fg}{7}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.2.3}frequences}{7}{subsubsection.4.1.2.3}
+\contentsline {subsubsection}{\numberline {4.1.2.4}pere}{7}{subsubsection.4.1.2.4}
+\contentsline {chapter}{\numberline {5}Documentation des fichiers}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}R\IeC {\'e}f\IeC {\'e}rence du fichier compresseur/include/code\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bin.h}{9}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Description d\IeC {\'e}taill\IeC {\'e}e}{9}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Documentation des champs}{9}{subsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.2.1}fd}{9}{subsubsection.5.1.2.1}
-\contentsline {subsubsection}{\numberline {5.1.2.2}fg}{9}{subsubsection.5.1.2.2}
-\contentsline {subsubsection}{\numberline {5.1.2.3}frequences}{9}{subsubsection.5.1.2.3}
-\contentsline {subsubsection}{\numberline {5.1.2.4}pere}{9}{subsubsection.5.1.2.4}
-\contentsline {chapter}{\numberline {6}Documentation des fichiers}{11}{chapter.6}
-\contentsline {section}{\numberline {6.1}R\IeC {\'e}f\IeC {\'e}rence du fichier compresseur/include/code\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bin.h}{11}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Description d\IeC {\'e}taill\IeC {\'e}e}{11}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Documentation des fonctions}{11}{subsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.2.1}Code\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bin(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Noeud $\ast $arbre, int racine)}{11}{subsubsection.6.1.2.1}
-\contentsline {section}{\numberline {6.2}R\IeC {\'e}f\IeC {\'e}rence du fichier compresseur/include/constrc\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Arbre.h}{12}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Description d\IeC {\'e}taill\IeC {\'e}e}{12}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Documentation des fonctions}{12}{subsection.6.2.2}
-\contentsline {subsubsection}{\numberline {6.2.2.1}Constrc\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Arbre(double $\ast $tab\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}frequence, Noeud $\ast $arbre)}{12}{subsubsection.6.2.2.1}
-\contentsline {section}{\numberline {6.3}R\IeC {\'e}f\IeC {\'e}rence du fichier compresseur/include/def\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Noeud.h}{13}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Description d\IeC {\'e}taill\IeC {\'e}e}{13}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Documentation des d\IeC {\'e}finitions de type}{13}{subsection.6.3.2}
-\contentsline {subsubsection}{\numberline {6.3.2.1}Noeud}{13}{subsubsection.6.3.2.1}
-\contentsline {section}{\numberline {6.4}R\IeC {\'e}f\IeC {\'e}rence du fichier compresseur/include/frequences.h}{14}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Description d\IeC {\'e}taill\IeC {\'e}e}{14}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Documentation des fonctions}{14}{subsection.6.4.2}
-\contentsline {subsubsection}{\numberline {6.4.2.1}Calcul\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Frequences\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Caractere(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E $\ast $fichier)}{14}{subsubsection.6.4.2.1}
-\contentsline {section}{\numberline {6.5}R\IeC {\'e}f\IeC {\'e}rence du fichier compresseur/include/generation.h}{15}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Description d\IeC {\'e}taill\IeC {\'e}e}{15}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Documentation des fonctions}{15}{subsection.6.5.2}
-\contentsline {subsubsection}{\numberline {6.5.2.1}Generation(char $\ast $$\ast $index, F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E $\ast $entre, F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E $\ast $sortie, int racine, Noeud $\ast $arbre)}{15}{subsubsection.6.5.2.1}
-\contentsline {section}{\numberline {6.6}R\IeC {\'e}f\IeC {\'e}rence du fichier decompresseur/include/decompresseur.h}{16}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Description d\IeC {\'e}taill\IeC {\'e}e}{16}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}Documentation des fonctions}{16}{subsection.6.6.2}
-\contentsline {subsubsection}{\numberline {6.6.2.1}Decompression(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E $\ast $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Entree, F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E $\ast $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sortie)}{16}{subsubsection.6.6.2.1}
-\contentsline {chapter}{Index}{19}{section*.20}
+\contentsline {subsection}{\numberline {5.1.2}Documentation des fonctions}{9}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}Code\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Bin(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Noeud $\ast $arbre, int racine)}{9}{subsubsection.5.1.2.1}
+\contentsline {section}{\numberline {5.2}R\IeC {\'e}f\IeC {\'e}rence du fichier compresseur/include/constrc\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Arbre.h}{10}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Description d\IeC {\'e}taill\IeC {\'e}e}{10}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Documentation des fonctions}{10}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}Constrc\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Arbre(double $\ast $tab\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}\_\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}frequence, Noeud $\ast $arbre)}{10}{subsubsection.5.2.2.1}
+\contentsline {section}{\numberline {5.3}R\IeC {\'e}f\IeC {\'e}rence du fichier compresseur/include/def\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Noeud.h}{11}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Description d\IeC {\'e}taill\IeC {\'e}e}{11}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Documentation des d\IeC {\'e}finitions de type}{11}{subsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Noeud}{11}{subsubsection.5.3.2.1}
+\contentsline {section}{\numberline {5.4}R\IeC {\'e}f\IeC {\'e}rence du fichier compresseur/include/frequences.h}{12}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Description d\IeC {\'e}taill\IeC {\'e}e}{12}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Documentation des fonctions}{12}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}Calcul\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Frequences\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Caractere(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E $\ast $fichier)}{12}{subsubsection.5.4.2.1}
+\contentsline {section}{\numberline {5.5}R\IeC {\'e}f\IeC {\'e}rence du fichier compresseur/include/generation.h}{13}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Description d\IeC {\'e}taill\IeC {\'e}e}{13}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Documentation des fonctions}{13}{subsection.5.5.2}
+\contentsline {subsubsection}{\numberline {5.5.2.1}Generation(char $\ast $$\ast $index, F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E $\ast $entre, F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E $\ast $sortie, int racine, Noeud $\ast $arbre)}{13}{subsubsection.5.5.2.1}
+\contentsline {section}{\numberline {5.6}R\IeC {\'e}f\IeC {\'e}rence du fichier decompresseur/include/decompresseur.h}{14}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Description d\IeC {\'e}taill\IeC {\'e}e}{14}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Documentation des fonctions}{14}{subsection.5.6.2}
+\contentsline {subsubsection}{\numberline {5.6.2.1}Decompression(\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E $\ast $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Entree, F\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}I\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}L\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}E $\ast $\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Sortie)}{14}{subsubsection.5.6.2.1}
+\contentsline {chapter}{Index}{17}{section*.20}

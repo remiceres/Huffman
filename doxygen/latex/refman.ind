@@ -1,61 +1,61 @@
 \begin{theindex}
 
   \item {Calcul\+Frequences\+Caractere}
-    \subitem {frequences.\+h}, \hyperpage{14}
+    \subitem {frequences.\+h}, \hyperpage{12}
   \item {Code\+Bin}
-    \subitem {code\+Bin.\+h}, \hyperpage{11}
+    \subitem {code\+Bin.\+h}, \hyperpage{9}
   \item {code\+Bin.\+h}
-    \subitem {Code\+Bin}, \hyperpage{11}
-  \item {compresseur/include/code\+Bin.\+h}, \hyperpage{11}
-  \item {compresseur/include/constrc\+Arbre.\+h}, \hyperpage{12}
-  \item {compresseur/include/def\+Noeud.\+h}, \hyperpage{13}
-    \subitem {Noeud}, \hyperpage{13}
-  \item {compresseur/include/frequences.\+h}, \hyperpage{14}
-  \item {compresseur/include/generation.\+h}, \hyperpage{15}
+    \subitem {Code\+Bin}, \hyperpage{9}
+  \item {compresseur/include/code\+Bin.\+h}, \hyperpage{9}
+  \item {compresseur/include/constrc\+Arbre.\+h}, \hyperpage{10}
+  \item {compresseur/include/def\+Noeud.\+h}, \hyperpage{11}
+    \subitem {Noeud}, \hyperpage{11}
+  \item {compresseur/include/frequences.\+h}, \hyperpage{12}
+  \item {compresseur/include/generation.\+h}, \hyperpage{13}
   \item {Constrc\+Arbre}
-    \subitem {constrc\+Arbre.\+h}, \hyperpage{12}
+    \subitem {constrc\+Arbre.\+h}, \hyperpage{10}
   \item {constrc\+Arbre.\+h}
-    \subitem {Constrc\+Arbre}, \hyperpage{12}
+    \subitem {Constrc\+Arbre}, \hyperpage{10}
 
   \indexspace
 
   \item {decompresseur.\+h}
-    \subitem {Decompression}, \hyperpage{16}
-  \item {decompresseur/include/decompresseur.\+h}, \hyperpage{16}
+    \subitem {Decompression}, \hyperpage{14}
+  \item {decompresseur/include/decompresseur.\+h}, \hyperpage{14}
   \item {Decompression}
-    \subitem {decompresseur.\+h}, \hyperpage{16}
+    \subitem {decompresseur.\+h}, \hyperpage{14}
 
   \indexspace
 
   \item {fd}
-    \subitem {noeud}, \hyperpage{9}
+    \subitem {noeud}, \hyperpage{7}
   \item {fg}
-    \subitem {noeud}, \hyperpage{9}
+    \subitem {noeud}, \hyperpage{7}
   \item {frequences}
-    \subitem {noeud}, \hyperpage{9}
+    \subitem {noeud}, \hyperpage{7}
   \item {frequences.\+h}
-    \subitem {Calcul\+Frequences\+Caractere}, \hyperpage{14}
+    \subitem {Calcul\+Frequences\+Caractere}, \hyperpage{12}
 
   \indexspace
 
   \item {Generation}
-    \subitem {generation.\+h}, \hyperpage{15}
+    \subitem {generation.\+h}, \hyperpage{13}
   \item {generation.\+h}
-    \subitem {Generation}, \hyperpage{15}
+    \subitem {Generation}, \hyperpage{13}
 
   \indexspace
 
   \item {Noeud}
-    \subitem {compresseur/include/def\+Noeud.\+h}, \hyperpage{13}
-  \item {noeud}, \hyperpage{9}
-    \subitem {fd}, \hyperpage{9}
-    \subitem {fg}, \hyperpage{9}
-    \subitem {frequences}, \hyperpage{9}
-    \subitem {pere}, \hyperpage{9}
+    \subitem {compresseur/include/def\+Noeud.\+h}, \hyperpage{11}
+  \item {noeud}, \hyperpage{7}
+    \subitem {fd}, \hyperpage{7}
+    \subitem {fg}, \hyperpage{7}
+    \subitem {frequences}, \hyperpage{7}
+    \subitem {pere}, \hyperpage{7}
 
   \indexspace
 
   \item {pere}
-    \subitem {noeud}, \hyperpage{9}
+    \subitem {noeud}, \hyperpage{7}
 
 \end{theindex}

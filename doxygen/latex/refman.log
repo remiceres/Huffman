@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.26)  14 DEC 2016 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.26)  14 DEC 2016 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1252,32 +1252,13 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 18.66588pt on input line 143.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 18.66588pt on input line 143.
-(./md_A_FAIRE.tex
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 4.
+(./md_README.tex
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 1.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 4.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 12.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Underfull \hbox (badness 905) in paragraph at lines 27--28
-[]\T1/phv/m/n/10 L\TS1/phv/m/n/10 '\T1/phv/m/n/10 arbre de huff-man est re-pré-
-senté par une struc-ture pos-sé-dant les var-riables \T1/pcr/m/n/10 pere\T1/phv
-/m/n/10 ,\T1/pcr/m/n/10 fg\T1/phv/m/n/10 , \T1/pcr/m/n/10 fd \T1/phv/m/n/10 et
- []
-
-) [1
-
-
-] [2
-
-]
-Chapitre 2.
-(./md_README.tex
+(Font)              scaled to size 8.99994pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
@@ -1286,10 +1267,14 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 10.79993pt on input line 3.
 LaTeX Font Info:    Font shape `TS1/phv/bc/n' will be
 (Font)              scaled to size 10.79993pt on input line 3.
-) [3] [4
+)
+[1
+
+
+] [2
 
 ]
-Chapitre 3.
+Chapitre 2.
 (./annotated.tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
@@ -1297,29 +1282,34 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
+) [3] [4
+
+]
+Chapitre 3.
+(./files.tex
+
+LaTeX Warning: Reference `decompresseur_2include_2defNoeud_8h' on page 5 undefi
+ned on input line 9.
+
 ) [5] [6
 
 ]
 Chapitre 4.
-(./files.tex
-
-LaTeX Warning: Reference `decompresseur_2include_2defNoeud_8h' on page 7 undefi
-ned on input line 9.
-
-) [7] [8
-
-]
-Chapitre 5.
 (./structnoeud.tex
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 10.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 33.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 6.29996pt on input line 33.
-) [9] [10
+)
+[7] [8
 
 ]
-Chapitre 6.
-(./codeBin_8h.tex <codeBin_8h__incl.pdf, id=306, 187.70125pt x 167.62625pt>
+Chapitre 5.
+(./codeBin_8h.tex <codeBin_8h__incl.pdf, id=288, 187.70125pt x 167.62625pt>
 File: codeBin_8h__incl.pdf Graphic file (type pdf)
 
 <use codeBin_8h__incl.pdf>
@@ -1335,13 +1325,13 @@ LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
 (Font)              Font shape `T1/phv/bc/sl' tried instead on input line 36.
 LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
 (Font)              scaled to size 8.99994pt on input line 36.
- [11 <./codeBin_8h__incl.pdf>]
+ [9 <./codeBin_8h__incl.pdf>]
 Underfull \hbox (badness 10000) detected at line 50
 [][][]
  []
 
 ) (./constrcArbre_8h.tex
-<constrcArbre_8h__incl.pdf, id=327, 187.70125pt x 167.62625pt>
+<constrcArbre_8h__incl.pdf, id=311, 187.70125pt x 167.62625pt>
 File: constrcArbre_8h__incl.pdf Graphic file (type pdf)
 
 <use constrcArbre_8h__incl.pdf>
@@ -1360,13 +1350,13 @@ LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `subscript' on input line 36.
 
-[12 <./constrcArbre_8h__incl.pdf>]
+[10 <./constrcArbre_8h__incl.pdf>]
 Underfull \hbox (badness 10000) detected at line 48
 [][][]
  []
 
 ) (./compresseur_2include_2defNoeud_8h.tex
-<compresseur_2include_2defNoeud_8h__dep__incl.pdf, id=344, 438.63875pt x 178.66
+<compresseur_2include_2defNoeud_8h__dep__incl.pdf, id=328, 438.63875pt x 178.66
 75pt>
 File: compresseur_2include_2defNoeud_8h__dep__incl.pdf Graphic file (type pdf)
  <use compresseur_2include_2defNoeud_8h__dep__incl.pdf>
@@ -1375,64 +1365,64 @@ on input line 12.
 (pdftex.def)             Requested size: 350.0pt x 142.56613pt.
 )
 (./frequences_8h.tex
-<frequences_8h__incl.pdf, id=348, 187.70125pt x 167.62625pt>
+<frequences_8h__incl.pdf, id=332, 187.70125pt x 167.62625pt>
 File: frequences_8h__incl.pdf Graphic file (type pdf)
 
 <use frequences_8h__incl.pdf>
 Package pdftex.def Info: frequences_8h__incl.pdf used on input line 13.
 (pdftex.def)             Requested size: 187.0pt x 167.0094pt.
- [13 <./compresseur_2include_2defNoeud_8h__dep__incl.pdf>]
+ [11 <./compresseur_2include_2defNoeud_8h__dep__incl.pdf>]
 Underfull \hbox (badness 10000) detected at line 45
 [][][]
  []
 
-) (./generation_8h.tex [14 <./frequences_8h__incl.pdf>]
-<generation_8h__incl.pdf, id=378, 212.795pt x 167.62625pt>
+) (./generation_8h.tex [12 <./frequences_8h__incl.pdf>]
+<generation_8h__incl.pdf, id=362, 212.795pt x 167.62625pt>
 File: generation_8h__incl.pdf Graphic file (type pdf)
 
 <use generation_8h__incl.pdf>
 Package pdftex.def Info: generation_8h__incl.pdf used on input line 14.
 (pdftex.def)             Requested size: 212.0pt x 167.0094pt.
 ) (./decompresseur_8h.tex
-<decompresseur_8h__incl.pdf, id=381, 254.9525pt x 167.62625pt>
+<decompresseur_8h__incl.pdf, id=365, 254.9525pt x 167.62625pt>
 File: decompresseur_8h__incl.pdf Graphic file (type pdf)
 
 <use decompresseur_8h__incl.pdf>
-Package pdftex.def Info: decompresseur_8h__incl.pdf used on input line 10.
+Package pdftex.def Info: decompresseur_8h__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 254.0pt x 167.00684pt.
 
 Underfull \vbox (badness 1796) has occurred while \output is active []
 
- [15 <./generation_8h__incl.pdf>] [16 <./decompresseur_8h__incl.pdf>]
-Underfull \hbox (badness 10000) detected at line 49
+ [13 <./generation_8h__incl.pdf>] [14 <./decompresseur_8h__incl.pdf>]
+Underfull \hbox (badness 10000) detected at line 48
 [][][]
  []
 
-) [17] [18
+) [15] [16
 
-] (./refman.ind [19
+] (./refman.ind [17
 
 
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 174.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 174.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
  (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 174.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 174.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 50F2DF013FA2DE0DDAB5BBCEEB42ED98;9651.
+(rerunfilecheck)             Checksum: 098799B940257E60703967C8F9F7E9AF;9556.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 174.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 170.
  ) 
 Here is how much of TeX's memory you used:
- 16024 strings out of 494916
- 228046 string characters out of 6179762
- 324505 words of memory out of 5000000
- 18935 multiletter control sequences out of 15000+600000
+ 16013 strings out of 494916
+ 227927 string characters out of 6179762
+ 324473 words of memory out of 5000000
+ 18931 multiletter control sequences out of 15000+600000
  63943 words of font info for 69 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  53i,15n,92p,1198b,699s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1444,10 +1434,10 @@ urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic
 /uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (23 pages, 146503 bytes).
+Output written on refman.pdf (21 pages, 141956 bytes).
 PDF statistics:
- 507 PDF objects out of 1000 (max. 8388607)
- 457 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 351 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 490 PDF objects out of 1000 (max. 8388607)
+ 442 compressed objects within 5 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 343 words of extra memory for PDF output out of 10000 (max. 10000000)
 
