@@ -33,6 +33,9 @@
 *.su
 
 # Executable
-huff
+huf
+dehuf
 -d
 .decomp
+.huf
+Résultat
