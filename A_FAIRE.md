@@ -1,12 +1,12 @@
 # A faire
 
-* Corrigé fautes du micro rapport PAPIER.
-
 * Fichier README qui indiquera l’état d’avancement de votre projet (et par exemple les bogues résiduels)
     * pas eu le temps de faire l'arvhiveur en python
     * pas eu le temps de compressé le stokage de l'arbre bits a bits.
 
 * corrigé docs
+
+* netoyer l'archive
 
 
 * les listings (fichiers sources) documentés (doxygen) PAPIER
