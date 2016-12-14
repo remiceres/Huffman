@@ -108,16 +108,18 @@ void Compression(FILE* Entree,FILE* Sortie)
     long int Taille_Entree = CalculeTaille(Entree);
     long int Taille_Sortie = CalculeTaille(Sortie);
 
-    printf("Taille originelle : %ld octets\nTaille compressée : %ld octets\n\nCompression : %f%s\n", Taille_Entree, Taille_Sortie, (float)Taille_Sortie/(float)Taille_Entree*100, "%");
+    printf("Taille originelle : %ld octets\nTaille compressée : %ld octets\n\nCompression : %f %% \n", Taille_Entree, Taille_Sortie, (float)(Taille_Entree-Taille_Sortie)/(float)Taille_Entree*100);
 
     //destruction des tableaux
-    free(Tab_frequence);
-    for(int i=0; i<256 ; i++)
+    if ( Index!=NULL)
     {
-        free(Index[i]);
+        free(Tab_frequence);
+        for(int i=0; i<256 ; i++)
+        {
+            free(Index[i]);
+        }
+        free(Index);
     }
-    free(Index);
-
 }
 
 FILE* OuvertureFichier(char* nom_fichier, char* option)
@@ -126,17 +128,12 @@ FILE* OuvertureFichier(char* nom_fichier, char* option)
     FILE* fichier;
     fichier = fopen( nom_fichier , option );
 
-    if ( fichier==NULL && strcmp("r",option) )
+    if ( fichier==NULL)
     {
-      fprintf(stderr, "Le fichier d'entrée est illisible : %s \n", strerror(errno));
+      fprintf(stderr, "Le fichier %s est illisible : %s \n", nom_fichier, strerror(errno));
       exit(1);
     }
 
-    if ( fichier==NULL && strcmp("w",option) )
-    {
-        fprintf(stderr, "Le fichier de sortie est non inscriptible : %s \n", strerror(errno));
-        exit(1);
-    }
 
     return fichier;
 }

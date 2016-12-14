@@ -1,9 +1,54 @@
+\subsection*{A faire}
+
 
 \begin{DoxyItemize}
-\item Make propre
-\item Générer document Doxygen
-\item Fermez tous les trucs ouverts avec mattézob logiciel
-\item Fichier R\+E\+A\+D\+ME avec la manière d\textquotesingle{}utilisation, nos bugs résiduels, et les fichiers testés
-\item Rapprt de 1 a 2 pages ( fonctionnement, test, bug, structure fichier compréser, choix technique)
-\item Améliorer l\textquotesingle{}affichage du compresseur 
+\item un micro rapport papier de 1 à 2 pages décrivant les choix importants effectués P\+A\+P\+I\+ER;
+\item Taille originelle de la source, taille compressée et gain en pourcentage (Taille originelle \+: 5194; taille compressée \+: 3761; gain \+: 27.\+6\% !)
+\item Fichier R\+E\+A\+D\+ME qui indiquera l’état d’avancement de votre projet (et par exemple les bogues résiduels)
+\item les listings (fichiers sources) documentés (doxygen) P\+A\+P\+I\+ER
+\item doxygen
+\item cd/latex
+\item make
+\item Archive nommée par les noms du groupe
+\item Envoyer à \href{mailto:meynard@lirmm.fr}{\tt meynard@lirmm.\+fr} et \href{mailto:pompidor@lirmm.fr}{\tt pompidor@lirmm.\+fr}
+\end{DoxyItemize}
+
+
+
+
+
+
+\begin{DoxyItemize}
+\item Quel est le nombre maximum de caractères (char) différents ?
+\begin{DoxyItemize}
+\item Le nombre maximum de caractères est 256.
+\end{DoxyItemize}
+\item Comment représenter l’arbre de Huffman ? Si l’arbre est implémenté avec des tableaux (fg, fd, parent), quels sont les indices des feuilles ? Quelle est la taille maximale de l’arbre (nombre de noeuds) ?
+\begin{DoxyItemize}
+\item L\textquotesingle{}arbre de huffman est représenté par une structure possédant les varriables {\ttfamily pere},{\ttfamily fg}, {\ttfamily fd} et {\ttfamily frequences}.
+\item Si l’arbre est implémenté avec des tableaux (fg, fd, parent), les indices des feuilles corresponde au code du carractère.
+\item L\textquotesingle{}arbre peut avoir au maximum 256 Noeuds.
+\end{DoxyItemize}
+\item Comment les caractères présents sont-\/ils codés dans l’arbre ?
+\begin{DoxyItemize}
+\item il sont codé par leurs code A\+S\+Cii.
+\end{DoxyItemize}
+\item Le préfixe du fichier compressé doit-\/il nécessairement contenir l’arbre ou les codes des caractères ou bien les deux (critère d’efficacité) ?
+\begin{DoxyItemize}
+\item Le préfixe du fichier compressé doit contenir soit l\textquotesingle{}arbre soit les codes des caractères.
+\item Stocker l\textquotesingle{}arbre est plus efficace que stoker les codes des caractères.
+\end{DoxyItemize}
+\item Quelle est la taille minimale de ce préfixe (expliquer chaque champ et sa longueur) ?
+\begin{DoxyItemize}
+\item Le préfixe est composé de 3 octet magiques permétant d\textquotesingle{}identifié pouvant être décompréssé. 1 octet représentant le nombre de bits utile du dernier octet puis l\textquotesingle{}arbre.
+\end{DoxyItemize}
+\item Si le dernier caractère écrit ne finit pas sur une frontière d’octet, comment le compléter ? Comment ne pas prendre les bits de complétion pour des bits de données ?
+\begin{DoxyItemize}
+\item on le complete avc des 0 inutile.
+\item Lors de la décomprétion on vérifie si on est a la fin du fichier, si c\textquotesingle{}est le cas on ne traite que les bits utile récupéré dans l\textquotesingle{}entête
+\end{DoxyItemize}
+\item Le décompresseur doit-\/il reconstituer l’arbre ? Comment ?
+\begin{DoxyItemize}
+\item oui, a partir de l\textquotesingle{}entête. 
+\end{DoxyItemize}
 \end{DoxyItemize}

@@ -5,11 +5,7 @@
 
 * un micro rapport papier de 1 à 2 pages décrivant les choix importants effectués PAPIER;
 
-
 * Taille originelle de la source, taille compressée et gain en pourcentage (Taille originelle : 5194; taille compressée : 3761; gain : 27.6% !)
-
-* affichage propre
-
 
 * Fichier README qui indiquera l’état d’avancement de votre projet (et par exemple les bogues résiduels)
 

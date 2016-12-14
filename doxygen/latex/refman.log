@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.26)  12 DEC 2016 18:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2016.11.26)  14 DEC 2016 08:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1231,9 +1231,9 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.99994pt on input line 2.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 2.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 2.
+(Font)              scaled to size 6.29996pt on input line 3.
  [3
 
 ])
@@ -1252,29 +1252,41 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 18.66588pt on input line 143.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 18.66588pt on input line 143.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 143.
 (./md_A_FAIRE.tex
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 6.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 10.79993pt on input line 1.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 13.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 28.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 6.
-)
-[1
+(Font)              scaled to size 8.99994pt on input line 28.
+
+Underfull \hbox (badness 905) in paragraph at lines 28--29
+[]\T1/phv/m/n/10 L\TS1/phv/m/n/10 '\T1/phv/m/n/10 arbre de huff-man est re-pré-
+senté par une struc-ture pos-sé-dant les var-riables \T1/pcr/m/n/10 pere\T1/phv
+/m/n/10 ,\T1/pcr/m/n/10 fg\T1/phv/m/n/10 , \T1/pcr/m/n/10 fd \T1/phv/m/n/10 et
+ []
+
+) [1
 
 
 ] [2
 
 ]
 Chapitre 2.
-(./md_compresseur_README.tex
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 5.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)) [3] [4
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 6.29996pt on input line 147.
+(./md_README.tex) [3] [4
 
 ]
 Chapitre 3.
@@ -1294,19 +1306,13 @@ Chapitre 4.
 ]
 Chapitre 5.
 (./structnoeud.tex
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 12.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 12.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 10.79993pt on input line 12.
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 8.99994pt on input line 37.
 ) [9] [10
 
 ]
 Chapitre 6.
-(./codeBin_8h.tex <codeBin_8h__incl.pdf, id=314, 187.70125pt x 167.62625pt>
+(./codeBin_8h.tex <codeBin_8h__incl.pdf, id=315, 187.70125pt x 167.62625pt>
 File: codeBin_8h__incl.pdf Graphic file (type pdf)
 
 <use codeBin_8h__incl.pdf>
@@ -1328,7 +1334,7 @@ Underfull \hbox (badness 10000) detected at line 50
  []
 
 ) (./constrcArbre_8h.tex
-<constrcArbre_8h__incl.pdf, id=335, 187.70125pt x 167.62625pt>
+<constrcArbre_8h__incl.pdf, id=336, 187.70125pt x 167.62625pt>
 File: constrcArbre_8h__incl.pdf Graphic file (type pdf)
 
 <use constrcArbre_8h__incl.pdf>
@@ -1353,7 +1359,7 @@ Underfull \hbox (badness 10000) detected at line 48
  []
 
 ) (./compresseur_2include_2defNoeud_8h.tex
-<compresseur_2include_2defNoeud_8h__dep__incl.pdf, id=352, 438.63875pt x 178.66
+<compresseur_2include_2defNoeud_8h__dep__incl.pdf, id=353, 438.63875pt x 178.66
 75pt>
 File: compresseur_2include_2defNoeud_8h__dep__incl.pdf Graphic file (type pdf)
  <use compresseur_2include_2defNoeud_8h__dep__incl.pdf>
@@ -1362,7 +1368,7 @@ on input line 12.
 (pdftex.def)             Requested size: 350.0pt x 142.56613pt.
 )
 (./decompresseur_2include_2defNoeud_8h.tex
-<decompresseur_2include_2defNoeud_8h__dep__incl.pdf, id=356, 197.73875pt x 178.
+<decompresseur_2include_2defNoeud_8h__dep__incl.pdf, id=357, 197.73875pt x 178.
 6675pt>
 File: decompresseur_2include_2defNoeud_8h__dep__incl.pdf Graphic file (type pdf
 )
@@ -1372,7 +1378,7 @@ d on input line 12.
 (pdftex.def)             Requested size: 197.0pt x 178.00185pt.
  [13 <./compresseur_2include_2defNoeud_8h__dep__incl.pdf>]) (./frequences_8h.te
 x
-<frequences_8h__incl.pdf, id=374, 187.70125pt x 167.62625pt>
+<frequences_8h__incl.pdf, id=375, 187.70125pt x 167.62625pt>
 File: frequences_8h__incl.pdf Graphic file (type pdf)
 
 <use frequences_8h__incl.pdf>
@@ -1384,14 +1390,14 @@ Underfull \hbox (badness 10000) detected at line 45
  []
 
 ) (./generation_8h.tex [15 <./frequences_8h__incl.pdf>]
-<generation_8h__incl.pdf, id=406, 212.795pt x 167.62625pt>
+<generation_8h__incl.pdf, id=407, 212.795pt x 167.62625pt>
 File: generation_8h__incl.pdf Graphic file (type pdf)
 
 <use generation_8h__incl.pdf>
 Package pdftex.def Info: generation_8h__incl.pdf used on input line 14.
 (pdftex.def)             Requested size: 212.0pt x 167.0094pt.
 ) (./decompresseur_8h.tex
-<decompresseur_8h__incl.pdf, id=409, 254.9525pt x 167.62625pt>
+<decompresseur_8h__incl.pdf, id=410, 254.9525pt x 167.62625pt>
 File: decompresseur_8h__incl.pdf Graphic file (type pdf)
 
 <use decompresseur_8h__incl.pdf>
@@ -1417,13 +1423,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 80586296271BBD0E2188CEEE570D193C;10312.
+(rerunfilecheck)             Checksum: 191BBD703185A9BA661135501B99F97C;10314.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
  ) 
 Here is how much of TeX's memory you used:
- 16040 strings out of 494916
- 228708 string characters out of 6179762
- 324621 words of memory out of 5000000
+ 16041 strings out of 494916
+ 228659 string characters out of 6179762
+ 324620 words of memory out of 5000000
  18945 multiletter control sequences out of 15000+600000
  63630 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1436,10 +1442,10 @@ urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic
 /uhvb8ac.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8ac.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (23 pages, 148637 bytes).
+Output written on refman.pdf (23 pages, 147754 bytes).
 PDF statistics:
- 528 PDF objects out of 1000 (max. 8388607)
- 476 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
+ 531 PDF objects out of 1000 (max. 8388607)
+ 479 compressed objects within 5 object streams
+ 109 named destinations out of 1000 (max. 500000)
  372 words of extra memory for PDF output out of 10000 (max. 10000000)
 
