@@ -108,7 +108,7 @@ void Compression(FILE* Entree,FILE* Sortie)
     long int Taille_Entree = CalculeTaille(Entree);
     long int Taille_Sortie = CalculeTaille(Sortie);
 
-    printf("Taille originelle : %ld octets\nTaille compressée : %ld octets\n\nCompression : %f %% \n", Taille_Entree, Taille_Sortie, (float)(Taille_Entree-Taille_Sortie)/(float)Taille_Entree*100);
+    printf("Taille originelle : %ld octets\nTaille compressée : %ld octets\n\nGain : %f %% \n", Taille_Entree, Taille_Sortie, (float)(Taille_Entree-Taille_Sortie)/(float)Taille_Entree*100);
 
     //destruction des tableaux
     if ( Index!=NULL)
