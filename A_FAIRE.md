@@ -1,14 +1,8 @@
 # A faire
 
-* corrigé docs
 
-* netoyer l'archive
+* nettoyer l'archive
 
-
-* les listings (fichiers sources) documentés (doxygen) PAPIER
-    * doxygen
-    * cd/latex
-    * make
 
 * Archive nommée par les noms du groupe
 
