@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme',['README',['../md_README.html',1,'']]]
+  ['compresseur_20de_20huffman',['Compresseur de Huffman',['../md_README.html',1,'']]]
 ];
